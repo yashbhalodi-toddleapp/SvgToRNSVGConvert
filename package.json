@@ -1,0 +1,21 @@
+{
+  "name": "iconstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@svgr/core": "^8.0.0",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "@svgr/plugin-jsx": "^8.0.1",
+    "@svgr/plugin-prettier": "^8.0.1",
+    "@svgr/plugin-svgo": "^8.0.1"
+  }
+}
