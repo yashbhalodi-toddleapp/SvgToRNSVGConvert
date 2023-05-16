@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg";
 import { colors } from "js/Common/UIElements/colors";
 
 const UnitPlanFilled = (props) => {
-  const { size, weight } = props;
+  const { size, weight, fill } = props;
   return (
     <Svg
       width={size}

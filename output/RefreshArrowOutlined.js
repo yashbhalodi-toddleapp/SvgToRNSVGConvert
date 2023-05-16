@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg";
 import { colors } from "js/Common/UIElements/colors";
 
 const RefreshArrowOutlined = (props) => {
-  const { size, weight } = props;
+  const { size, weight, fill } = props;
 
   if (weight === "REGULAR") {
     return (

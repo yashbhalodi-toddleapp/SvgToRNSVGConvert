@@ -4,7 +4,7 @@ import Svg, { Rect } from "react-native-svg";
 import { colors } from "js/Common/UIElements/colors";
 
 const SquareFilled = (props) => {
-  const { size, weight } = props;
+  const { size, weight, fill } = props;
   return (
     <Svg
       width={size}
