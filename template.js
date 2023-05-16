@@ -11,7 +11,7 @@ const propTypesTemplate = (
   ${interfaces}
   
   const ${componentName} = (props) => {
-    const { size, weight } = props
+    const { size, weight, fill } = props
 
     return ${jsx};
   }
