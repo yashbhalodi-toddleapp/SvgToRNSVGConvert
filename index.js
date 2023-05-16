@@ -120,7 +120,7 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
   // replace stroke="#808080" with stroke={fill}
   resultJSCode = resultJSCode.replace(/stroke="#808080"/g, "stroke={fill}");
 
-  writeFile(`./output/${componentName}.js`, resultJSCode);
+  await writeFile(`./output/${componentName}.js`, resultJSCode);
   return {
     hasRegularWeight,
     componentName,
