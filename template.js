@@ -4,6 +4,7 @@ const propTypesTemplate = (
 ) => {
   return tpl`
   ${imports}
+  import React from "react";
   import PropTypes from 'prop-types';
   import { colors } from "js/Common/UIElements/colors";
 

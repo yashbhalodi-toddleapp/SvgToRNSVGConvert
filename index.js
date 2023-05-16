@@ -81,7 +81,7 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
       }\n`;
 
     const sanitizedJsCodeLines = jsCode.split("\n");
-    sanitizedJsCodeLines.splice(5, 0, codeSnippet);
+    sanitizedJsCodeLines.splice(6, 0, codeSnippet);
     const combinedJsCode = sanitizedJsCodeLines.join("\n");
 
     console.log("Has regular weight icon:", componentName);
