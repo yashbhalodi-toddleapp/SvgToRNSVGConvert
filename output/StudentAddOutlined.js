@@ -57,7 +57,7 @@ StudentAddOutlined.propTypes = {
 };
 StudentAddOutlined.defaultProps = {
   size: 20,
-  weight: "REGULAR",
+  weight: "BOLD",
   fill: colors.iconDefault,
 };
 export default StudentAddOutlined;

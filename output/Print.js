@@ -113,7 +113,7 @@ Print.propTypes = {
 };
 Print.defaultProps = {
   size: 20,
-  weight: "REGULAR",
+  weight: "BOLD",
   fill: colors.iconDefault,
 };
 export default Print;
