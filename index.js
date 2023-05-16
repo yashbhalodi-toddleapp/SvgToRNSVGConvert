@@ -47,13 +47,11 @@ const getSvg = async (svgPath) => {
     const svgContent = await readFile(svgPath, "utf8");
     return svgContent;
   } catch (err) {
-    console.error("Error reading SVG file:", svgPath);
     return "";
   }
 };
 
 const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
-  console.log("======== Generating svg:", componentName);
   const svgCode = await getSvg(svgFile);
 
   const jsCode = await transform(
@@ -63,12 +61,12 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
   );
 
   const regularPath = `${regularDir}/${componentName}.svg`;
-
   const regularSvgCode = await getSvg(regularPath);
+  const hasRegularWeight = regularSvgCode !== "";
 
   let resultJSCode;
-  if (regularSvgCode === "") {
-    console.log("No regular weight icon:", componentName);
+
+  if (!hasRegularWeight) {
     resultJSCode = jsCode;
   } else {
     const regularJsCode = await transform(regularSvgCode, {
@@ -80,35 +78,91 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
         return ${regularJsCode.substring(1)};
       }\n`;
 
-    const sanitizedJsCodeLines = jsCode.split("\n");
-    sanitizedJsCodeLines.splice(6, 0, codeSnippet);
-    const combinedJsCode = sanitizedJsCodeLines.join("\n");
+    const jsCodeLines = jsCode.split("\n");
+    jsCodeLines.splice(6, 0, codeSnippet);
+    const combinedJsCode = jsCodeLines.join("\n");
 
-    console.log("Has regular weight icon:", componentName);
     resultJSCode = combinedJsCode;
   }
 
+  // add empty line before component declaration
+  const lines = resultJSCode.split("\n");
+  const componentDeclarationIndex = lines.findIndex(
+    (line) => line === `const ${componentName} = (props) => {`
+  );
+  lines.splice(componentDeclarationIndex, 0, "");
+
+  // add empty line before propTypes declaration
+  const propTypeLineIndex = lines.findIndex(
+    (line) => line === `${componentName}.propTypes = {`
+  );
+  lines.splice(propTypeLineIndex, 0, "");
+
+  // add empty line before defaultProps declaration
+  const defaultPropsLineIndex = lines.findIndex(
+    (line) => line === `${componentName}.defaultProps = {`
+  );
+  lines.splice(defaultPropsLineIndex, 0, "");
+
+  // if regular weight icon doesn't exists, change `  weight: PropTypes.oneOf(["REGULAR","BOLD"]),` to `  weight: PropTypes.oneOf(["BOLD"]),`
+  if (!hasRegularWeight) {
+    const weightLineIndex = lines.findIndex(
+      (line) => line === `  weight: PropTypes.oneOf(["REGULAR", "BOLD"]),`
+    );
+    lines.splice(weightLineIndex, 1, `  weight: PropTypes.oneOf(["BOLD"]),`);
+  }
+
+  resultJSCode = lines.join("\n");
+
+  // replace fill="#808080" with fill={fill}
+  resultJSCode = resultJSCode.replace(/fill="#808080"/g, "fill={fill}");
+
+  // replace stroke="#808080" with stroke={fill}
+  resultJSCode = resultJSCode.replace(/stroke="#808080"/g, "stroke={fill}");
+
   writeFile(`./output/${componentName}.js`, resultJSCode);
-  console.log(`======== Done Writing ${componentName} ========\n`);
+  return {
+    hasRegularWeight,
+    componentName,
+  };
 };
 
 const main = async () => {
   const inputDir = "./input/Bold";
   const regularDir = "./input/Regular";
-  const allFiles = await readdir(inputDir);
-  const svgFiles = allFiles.filter((file) => file.endsWith(".svg"));
+  const allBoldFiles = await readdir(inputDir);
+  const allRegularFiles = await readdir(regularDir);
+  const svgBoldFiles = allBoldFiles.filter((file) => file.endsWith(".svg"));
+  const svgRegularFiles = allRegularFiles.filter((file) =>
+    file.endsWith(".svg")
+  );
 
   const jsCodePromises = [];
-  svgFiles.forEach((file) => {
+  svgBoldFiles.forEach((file) => {
     const filePath = path.join(inputDir, file);
-
     const componentName = path.parse(filePath).name;
+
     jsCodePromises.push(
       generateJSForSvgFile(componentName, filePath, regularDir)
     );
   });
   await Promise.all(jsCodePromises).then((values) => {
-    console.log("FINISH");
+    const regularWeightIconCount = values.filter(
+      (value) => value.hasRegularWeight
+    ).length;
+
+    console.log("====== Input Summary ======");
+    console.log(`Total icons: ${svgBoldFiles.length}`);
+    console.log(`Regular weight icon: ${svgRegularFiles.length}`);
+
+    console.log("====== Output Summary ======");
+    console.log(`Total icons: ${values.length}`);
+    console.log(`Regular weight icon: ${regularWeightIconCount}`);
+    console.log("====== csv for summary ======");
+    console.log(`ComponentName,HasRegularWeight`);
+    values.forEach((value) => {
+      console.log(`${value.componentName},${value.hasRegularWeight}`);
+    });
   });
 };
 

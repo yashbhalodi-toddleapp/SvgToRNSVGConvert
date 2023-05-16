@@ -3,9 +3,9 @@ const propTypesTemplate = (
   { tpl }
 ) => {
   return tpl`
-  ${imports}
   import React from "react";
   import PropTypes from 'prop-types';
+  ${imports}
   import { colors } from "js/Common/UIElements/colors";
 
   ${interfaces}
@@ -24,7 +24,7 @@ const propTypesTemplate = (
 
   ${componentName}.defaultProps = {
     size: 20,
-    weight: "REGULAR",
+    weight: "BOLD",
     fill: colors.iconDefault
   }
   
