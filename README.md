@@ -7,9 +7,8 @@
 - in `input` directory
   - in `Bold` directory put all svg files of bold weight icons
   - in `Regular` directory put all svg files of regular weight icons
-- Run `node index.js`
-- Run `./generateIndexFile.sh`
-- Open `./output/index.js` and remove the `index` from export object
+- Run `npm run generate`
+- `output` directory will have all the generated components
 
 Note: We have assumed that default weight for the icons will be Bold. That means Regular weight icon may or may not be available, but Bold weight icon will always be available.
 

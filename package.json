@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\""
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
+    "generate": "node index.js && ./generateIndexFile.sh && npm run pretty"
   },
   "author": "",
   "license": "ISC",
