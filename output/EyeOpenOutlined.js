@@ -27,7 +27,7 @@ EyeOpenOutlined.propTypes = {
 };
 EyeOpenOutlined.defaultProps = {
   size: 20,
-  weight: "REGULAR",
+  weight: "BOLD",
   fill: colors.iconDefault,
 };
 export default EyeOpenOutlined;

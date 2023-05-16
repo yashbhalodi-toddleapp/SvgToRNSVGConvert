@@ -63,7 +63,7 @@ AssessmentOutlined.propTypes = {
 };
 AssessmentOutlined.defaultProps = {
   size: 20,
-  weight: "REGULAR",
+  weight: "BOLD",
   fill: colors.iconDefault,
 };
 export default AssessmentOutlined;
