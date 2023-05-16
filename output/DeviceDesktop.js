@@ -29,7 +29,7 @@ DeviceDesktop.propTypes = {
 };
 DeviceDesktop.defaultProps = {
   size: 20,
-  weight: "BOLD",
+  weight: "REGULAR",
   fill: colors.iconDefault,
 };
 export default DeviceDesktop;

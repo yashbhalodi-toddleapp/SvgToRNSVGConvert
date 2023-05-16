@@ -1,4 +1,4 @@
-import AddCircle from "./AddCircle.js";
+import AddCircleOutlined from "./AddCircleOutlined.js";
 import AddOutlined from "./AddOutlined.js";
 import AddTagOutlined from "./AddTagOutlined.js";
 import ApprovalTickOutlined from "./ApprovalTickOutlined.js";
@@ -100,7 +100,7 @@ import WarningCircleFilled from "./WarningCircleFilled.js";
 import WarningTriangleFilled from "./WarningTriangleFilled.js";
 
 export {
-  AddCircle,
+  AddCircleOutlined,
   AddOutlined,
   AddTagOutlined,
   ApprovalTickOutlined,

@@ -49,7 +49,7 @@ ImageSquareOutlined.propTypes = {
 };
 ImageSquareOutlined.defaultProps = {
   size: 20,
-  weight: "BOLD",
+  weight: "REGULAR",
   fill: colors.iconDefault,
 };
 export default ImageSquareOutlined;

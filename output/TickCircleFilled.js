@@ -17,7 +17,7 @@ const TickCircleFilled = (props) => {
       >
         <Path
           d="M16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2Z"
-          fill={fill}
+          fill="#808080"
         />
         <Path
           fillRule="evenodd"
@@ -39,7 +39,7 @@ const TickCircleFilled = (props) => {
     >
       <Path
         d="M16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2Z"
-        fill={fill}
+        fill="#808080"
       />
       <Path
         fillRule="evenodd"
@@ -57,7 +57,7 @@ TickCircleFilled.propTypes = {
 };
 TickCircleFilled.defaultProps = {
   size: 20,
-  weight: "BOLD",
+  weight: "REGULAR",
   fill: colors.iconDefault,
 };
 export default TickCircleFilled;

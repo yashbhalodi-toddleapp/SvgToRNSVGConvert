@@ -1,4 +1,5 @@
 import React from "react";
+import Svg, { Path } from "react-native-svg";
 import PropTypes from "prop-types";
 import { colors } from "js/Common/UIElements/colors";
 
@@ -18,7 +19,7 @@ const WarningTriangleFilled = (props) => {
           fillRule="evenodd"
           clipRule="evenodd"
           d="M2.70652 24.5779C1.6303 26.5766 3.07791 29.0002 5.34793 29.0002L26.6511 29.0002C28.9211 29.0002 30.3687 26.5766 29.2925 24.5779L18.6409 4.79645C17.5082 2.69285 14.4908 2.69285 13.3581 4.79645L2.70652 24.5779Z"
-          fill={fill}
+          fill="#808080"
         />
         <Path
           d="M16 11C15.4477 11 15 11.4477 15 12V18C15 18.5523 15.4477 19 16 19C16.5523 19 17 18.5523 17 18V12C17 11.4477 16.5523 11 16 11Z"
@@ -42,7 +43,7 @@ const WarningTriangleFilled = (props) => {
     >
       <Path
         d="M2.7075 24.5779C1.63128 26.5766 3.07889 29.0002 5.34891 29.0002L26.652 29.0002C28.9221 29.0002 30.3697 26.5766 29.2935 24.5779L18.6419 4.79645C17.5092 2.69285 14.4918 2.69285 13.3591 4.79645L2.7075 24.5779Z"
-        fill={fill}
+        fill="#808080"
       />
       <Path
         d="M16 11C15.4477 11 15 11.4477 15 12V18C15 18.5523 15.4477 19 16 19C16.5523 19 17 18.5523 17 18V12C17 11.4477 16.5523 11 16 11Z"
@@ -62,7 +63,7 @@ WarningTriangleFilled.propTypes = {
 };
 WarningTriangleFilled.defaultProps = {
   size: 20,
-  weight: "BOLD",
+  weight: "REGULAR",
   fill: colors.iconDefault,
 };
 export default WarningTriangleFilled;

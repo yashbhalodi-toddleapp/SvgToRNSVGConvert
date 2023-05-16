@@ -17,20 +17,20 @@ const PageDottedOutlined = (props) => {
       >
         <Path
           d="M5 13.0002V24.0002C5 26.2094 6.79086 28.0002 9 28.0002H23C25.2091 28.0002 27 26.2094 27 24.0002V13.0002"
-          stroke={fill}
+          stroke="#808080"
           strokeWidth={2}
           strokeLinejoin="round"
           strokeDasharray="2 4"
         />
         <Path
           d="M27 14.0005V11.0005L19 3.00049H9C6.79086 3.00049 5 4.79135 5 7.00049V14.0005"
-          stroke={fill}
+          stroke="#808080"
           strokeWidth={2}
           strokeLinejoin="round"
         />
         <Path
           d="M19 3.00024L27 11.0002H23C20.7909 11.0002 19 9.20938 19 7.00024V3.00024Z"
-          stroke={fill}
+          stroke="#808080"
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -49,20 +49,20 @@ const PageDottedOutlined = (props) => {
     >
       <Path
         d="M5 13.0002V24.0002C5 26.2094 6.79086 28.0002 9 28.0002H23C25.2091 28.0002 27 26.2094 27 24.0002V13.0002"
-        stroke={fill}
+        stroke="#808080"
         strokeWidth={3}
         strokeLinejoin="round"
         strokeDasharray="1 5"
       />
       <Path
         d="M27 14.0005V11.0005L19 3.00049H9C6.79086 3.00049 5 4.79135 5 7.00049V14.0005"
-        stroke={fill}
+        stroke="#808080"
         strokeWidth={3}
         strokeLinejoin="round"
       />
       <Path
         d="M19 3.00024L27 11.0002H23C20.7909 11.0002 19 9.20938 19 7.00024V3.00024Z"
-        stroke={fill}
+        stroke="#808080"
         strokeWidth={3}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -77,7 +77,7 @@ PageDottedOutlined.propTypes = {
 };
 PageDottedOutlined.defaultProps = {
   size: 20,
-  weight: "BOLD",
+  weight: "REGULAR",
   fill: colors.iconDefault,
 };
 export default PageDottedOutlined;

@@ -55,7 +55,7 @@ PlaceholderFileOutlined.propTypes = {
 };
 PlaceholderFileOutlined.defaultProps = {
   size: 20,
-  weight: "BOLD",
+  weight: "REGULAR",
   fill: colors.iconDefault,
 };
 export default PlaceholderFileOutlined;

@@ -15,7 +15,7 @@ const MoreHorizontalDotsCircle = (props) => {
     >
       <Path
         d="M16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2Z"
-        fill={fill}
+        fill="#808080"
       />
       <Path
         d="M9 18C10.1046 18 11 17.1046 11 16C11 14.8954 10.1046 14 9 14C7.89543 14 7 14.8954 7 16C7 17.1046 7.89543 18 9 18Z"
@@ -39,7 +39,7 @@ MoreHorizontalDotsCircle.propTypes = {
 };
 MoreHorizontalDotsCircle.defaultProps = {
   size: 20,
-  weight: "BOLD",
+  weight: "REGULAR",
   fill: colors.iconDefault,
 };
 export default MoreHorizontalDotsCircle;
