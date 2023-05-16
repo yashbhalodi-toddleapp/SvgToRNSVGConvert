@@ -19,7 +19,7 @@ const QRCodeOutlined = (props) => {
           width={9}
           height={9}
           rx={1}
-          stroke="#808080"
+          stroke={fill}
           strokeWidth={2}
         />
         <Rect
@@ -28,7 +28,7 @@ const QRCodeOutlined = (props) => {
           width={9}
           height={9}
           rx={1}
-          stroke="#808080"
+          stroke={fill}
           strokeWidth={2}
         />
         <Rect
@@ -37,33 +37,33 @@ const QRCodeOutlined = (props) => {
           width={9}
           height={9}
           rx={1}
-          stroke="#808080"
+          stroke={fill}
           strokeWidth={2}
         />
         <Path
           d="M24 21H27C27.5523 21 28 21.4477 28 22V28"
-          stroke="#808080"
+          stroke={fill}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <Path
           d="M19 19V28"
-          stroke="#808080"
+          stroke={fill}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <Path
           d="M26 19V21"
-          stroke="#808080"
+          stroke={fill}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <Path
           d="M20 25H24"
-          stroke="#808080"
+          stroke={fill}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -86,7 +86,7 @@ const QRCodeOutlined = (props) => {
         width={9}
         height={9}
         rx={1}
-        stroke="#808080"
+        stroke={fill}
         strokeWidth={3}
       />
       <Rect
@@ -95,7 +95,7 @@ const QRCodeOutlined = (props) => {
         width={9}
         height={9}
         rx={1}
-        stroke="#808080"
+        stroke={fill}
         strokeWidth={3}
       />
       <Rect
@@ -104,33 +104,33 @@ const QRCodeOutlined = (props) => {
         width={9}
         height={9}
         rx={1}
-        stroke="#808080"
+        stroke={fill}
         strokeWidth={3}
       />
       <Path
         d="M24 21H27C27.5523 21 28 21.4477 28 22V28"
-        stroke="#808080"
+        stroke={fill}
         strokeWidth={3}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
         d="M19 19V28"
-        stroke="#808080"
+        stroke={fill}
         strokeWidth={3}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
         d="M26 19V21"
-        stroke="#808080"
+        stroke={fill}
         strokeWidth={3}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
         d="M20 25H24"
-        stroke="#808080"
+        stroke={fill}
         strokeWidth={3}
         strokeLinecap="round"
         strokeLinejoin="round"
