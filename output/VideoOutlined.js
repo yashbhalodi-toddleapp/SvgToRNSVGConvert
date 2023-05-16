@@ -1,6 +1,8 @@
+import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from "prop-types";
 import { colors } from "js/Common/UIElements/colors";
+
 const VideoOutlined = (props) => {
   const { size, weight } = props;
   return (

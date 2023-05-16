@@ -1,6 +1,8 @@
+import React from "react";
 import Svg, { Rect, Path } from "react-native-svg";
 import PropTypes from "prop-types";
 import { colors } from "js/Common/UIElements/colors";
+
 const QRCodeOutlined = (props) => {
   const { size, weight } = props;
 

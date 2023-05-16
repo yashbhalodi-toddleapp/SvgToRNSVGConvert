@@ -1,6 +1,8 @@
+import React from "react";
 import Svg, { Path, Rect } from "react-native-svg";
 import PropTypes from "prop-types";
 import { colors } from "js/Common/UIElements/colors";
+
 const Canvas = (props) => {
   const { size, weight } = props;
   return (
