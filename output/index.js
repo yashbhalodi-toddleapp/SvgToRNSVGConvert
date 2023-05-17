@@ -37,6 +37,8 @@ import FolderFilled from "./FolderFilled.js";
 import FolderOutlined from "./FolderOutlined.js";
 import GlobeOutlined from "./GlobeOutlined.js";
 import GoalsOutlined from "./GoalsOutlined.js";
+import GoogleColored from "./GoogleColored.js";
+import GoogleDriveColoured from "./GoogleDriveColoured.js";
 import GridFilled from "./GridFilled.js";
 import HamburgerOutlined from "./HamburgerOutlined.js";
 import HeartFilled from "./HeartFilled.js";
@@ -145,6 +147,8 @@ export {
   FolderOutlined,
   GlobeOutlined,
   GoalsOutlined,
+  GoogleColored,
+  GoogleDriveColoured,
   GridFilled,
   HamburgerOutlined,
   HeartFilled,
