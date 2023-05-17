@@ -126,10 +126,58 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
     "stroke={fill}"
   );
 
+  // if the component name contains "Filled" and resultJsCode contains word fill="white" then
+  // add stroke: PropTypes.string, to propTypes
+  // add stroke: colors.iconOn, to defaultProps
+  // destructure stroke from props
+  // replace fill="white" with fill={stroke}
+  const isFilledIcon =
+    componentName.includes("Filled") && resultJSCode.includes(`fill="white"`);
+  if (isFilledIcon) {
+    const lines2 = resultJSCode.split("\n");
+    const strokePropTypeLineIndex = lines2.findIndex(
+      (line) => line === `${componentName}.propTypes = {`
+    );
+    if (strokePropTypeLineIndex !== -1) {
+      lines2.splice(
+        strokePropTypeLineIndex + 1,
+        0,
+        `  stroke: PropTypes.string,`
+      );
+    }
+
+    const strokeDefaultPropsLineIndex = lines2.findIndex(
+      (line) => line === `${componentName}.defaultProps = {`
+    );
+    if (strokeDefaultPropsLineIndex !== -1) {
+      lines2.splice(
+        strokeDefaultPropsLineIndex + 1,
+        0,
+        `  stroke: colors.iconOn,`
+      );
+    }
+
+    const strokeDestructureLineIndex = lines2.findIndex(
+      (line) => line === `const ${componentName} = (props) => {`
+    );
+    if (strokeDestructureLineIndex !== -1) {
+      lines2.splice(
+        strokeDestructureLineIndex + 1,
+        1,
+        `    const { size, weight, fill, stroke } = props`
+      );
+    }
+
+    resultJSCode = lines2.join("\n");
+
+    resultJSCode = resultJSCode.replace(/fill="white"/g, "fill={stroke}");
+  }
+
   await writeFile(`./output/${componentName}.js`, resultJSCode);
   return {
     hasRegularWeight,
     componentName,
+    hasStrokeAndFill: isFilledIcon,
   };
 };
 
@@ -156,6 +204,9 @@ const main = async () => {
     const regularWeightIconCount = values.filter(
       (value) => value.hasRegularWeight
     ).length;
+    const hasStrokeAndFillCount = values.filter(
+      (value) => value.hasStrokeAndFill
+    ).length;
 
     console.log("====== Input Summary ======");
     console.log(`Total icons: ${svgBoldFiles.length}`);
@@ -164,10 +215,13 @@ const main = async () => {
     console.log("====== Output Summary ======");
     console.log(`Total icons: ${values.length}`);
     console.log(`Regular weight icon: ${regularWeightIconCount}`);
+    console.log(`Has Stroke and Fill both icon: ${hasStrokeAndFillCount}`);
     console.log("====== csv for summary ======");
-    console.log(`ComponentName,HasRegularWeight`);
+    console.log(`ComponentName,HasRegularWeight,HasStrokeAndFill`);
     values.forEach((value) => {
-      console.log(`${value.componentName},${value.hasRegularWeight}`);
+      console.log(
+        `${value.componentName},${value.hasRegularWeight},${value.hasStrokeAndFill}`
+      );
     });
   });
 };
