@@ -9,6 +9,7 @@ import AssessmentApplicableOutlined from "./AssessmentApplicableOutlined.js";
 import AssessmentOutlined from "./AssessmentOutlined.js";
 import BellOutlined from "./BellOutlined.js";
 import CalendarOutlined from "./CalendarOutlined.js";
+import CameraOutlined from "./CameraOutlined.js";
 import ChatDiscussionOutlined from "./ChatDiscussionOutlined.js";
 import ChevronDownOutlined from "./ChevronDownOutlined.js";
 import ChevronLeftOutlined from "./ChevronLeftOutlined.js";
@@ -51,6 +52,7 @@ import LockOutlined from "./LockOutlined.js";
 import LogoutOutlined from "./LogoutOutlined.js";
 import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
+import MicrophoneOutlined from "./MicrophoneOutlined.js";
 import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
 import PageDottedOutlined from "./PageDottedOutlined.js";
@@ -97,6 +99,7 @@ import TickSmallOutlined from "./TickSmallOutlined.js";
 import UnitPlanFilled from "./UnitPlanFilled.js";
 import UnitPlanOutlined from "./UnitPlanOutlined.js";
 import UploadOutlined from "./UploadOutlined.js";
+import VideoOutlined from "./VideoOutlined.js";
 import WarningCircleFilled from "./WarningCircleFilled.js";
 import WarningTriangleFilled from "./WarningTriangleFilled.js";
 
@@ -112,6 +115,7 @@ export {
   AssessmentOutlined,
   BellOutlined,
   CalendarOutlined,
+  CameraOutlined,
   ChatDiscussionOutlined,
   ChevronDownOutlined,
   ChevronLeftOutlined,
@@ -154,6 +158,7 @@ export {
   LogoutOutlined,
   LoudspeakerFilled,
   LoudspeakerOutlined,
+  MicrophoneOutlined,
   MoreHorizontalDotsCircleFilled,
   NotificationBellFilled,
   PageDottedOutlined,
@@ -200,6 +205,7 @@ export {
   UnitPlanFilled,
   UnitPlanOutlined,
   UploadOutlined,
+  VideoOutlined,
   WarningCircleFilled,
   WarningTriangleFilled,
 };
