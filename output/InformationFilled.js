@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg";
 import { colors } from "js/Common/UIElements/colors";
 
 const InformationFilled = (props) => {
-  const { size, weight, fill } = props;
+  const { size, weight, fill, stroke } = props;
 
   if (weight === "REGULAR") {
     return (
@@ -39,23 +39,25 @@ const InformationFilled = (props) => {
       />
       <Path
         d="M16 9C16.8284 9 17.5 9.67158 17.5 10.5C17.5 11.3284 16.8284 12 16 12C15.1716 12 14.5 11.3284 14.5 10.5C14.5 9.67158 15.1716 9 16 9Z"
-        fill="white"
+        fill={stroke}
       />
       <Path
         d="M18 23C18.5523 23 19 22.5523 19 22C19 21.4477 18.5523 21 18 21H17L17 15C17 14.4477 16.5523 14 16 14H14C13.4477 14 13 14.4477 13 15C13 15.5523 13.4477 16 14 16H15L15 22C15 22.5523 15.4477 23 16 23H18Z"
-        fill="white"
+        fill={stroke}
       />
     </Svg>
   );
 };
 
 InformationFilled.propTypes = {
+  stroke: PropTypes.string,
   size: PropTypes.oneOf([16, 20, 24, 32]),
   weight: PropTypes.oneOf(["REGULAR", "BOLD"]),
   fill: PropTypes.string,
 };
 
 InformationFilled.defaultProps = {
+  stroke: colors.iconOn,
   size: 20,
   weight: "BOLD",
   fill: colors.iconDefault,

@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg";
 import { colors } from "js/Common/UIElements/colors";
 
 const ClockFilled = (props) => {
-  const { size, weight, fill } = props;
+  const { size, weight, fill, stroke } = props;
 
   if (weight === "REGULAR") {
     return (
@@ -41,19 +41,21 @@ const ClockFilled = (props) => {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M16 8.5C16.8284 8.5 17.5 9.17157 17.5 10V15.3787L21.0607 18.9393C21.6464 19.5251 21.6464 20.4749 21.0607 21.0607C20.4749 21.6464 19.5251 21.6464 18.9393 21.0607L14.9393 17.0607C14.658 16.7794 14.5 16.3978 14.5 16V10C14.5 9.17157 15.1716 8.5 16 8.5Z"
-        fill="white"
+        fill={stroke}
       />
     </Svg>
   );
 };
 
 ClockFilled.propTypes = {
+  stroke: PropTypes.string,
   size: PropTypes.oneOf([16, 20, 24, 32]),
   weight: PropTypes.oneOf(["REGULAR", "BOLD"]),
   fill: PropTypes.string,
 };
 
 ClockFilled.defaultProps = {
+  stroke: colors.iconOn,
   size: 20,
   weight: "BOLD",
   fill: colors.iconDefault,
