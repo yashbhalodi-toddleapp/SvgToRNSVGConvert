@@ -114,11 +114,17 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
 
   resultJSCode = lines.join("\n");
 
-  // replace fill="#808080" with fill={fill}
-  resultJSCode = resultJSCode.replace(/fill="#808080"/g, "fill={fill}");
+  // replace fill="#808080", etc with fill={fill}
+  resultJSCode = resultJSCode.replace(
+    /fill="#([0-9a-fA-F]{6})"/g,
+    "fill={fill}"
+  );
 
-  // replace stroke="#808080" with stroke={fill}
-  resultJSCode = resultJSCode.replace(/stroke="#808080"/g, "stroke={fill}");
+  // replace stroke="#808080", etc with stroke={fill}
+  resultJSCode = resultJSCode.replace(
+    /stroke="#([0-9a-fA-F]{6})"/g,
+    "stroke={fill}"
+  );
 
   await writeFile(`./output/${componentName}.js`, resultJSCode);
   return {
