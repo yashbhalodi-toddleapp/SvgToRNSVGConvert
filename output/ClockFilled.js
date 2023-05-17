@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg";
 import { colors } from "js/Common/UIElements/colors";
 
 const ClockFilled = (props) => {
-  const { size, weight, fill, stroke } = props;
+  const { size, weight, fill } = props;
 
   if (weight === "REGULAR") {
     return (
@@ -34,28 +34,22 @@ const ClockFilled = (props) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2Z"
-        fill={fill}
-      />
-      <Path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M16 8.5C16.8284 8.5 17.5 9.17157 17.5 10V15.3787L21.0607 18.9393C21.6464 19.5251 21.6464 20.4749 21.0607 21.0607C20.4749 21.6464 19.5251 21.6464 18.9393 21.0607L14.9393 17.0607C14.658 16.7794 14.5 16.3978 14.5 16V10C14.5 9.17157 15.1716 8.5 16 8.5Z"
-        fill={stroke}
+        d="M2 16C2 8.26801 8.26801 2 16 2C23.732 2 30 8.26801 30 16C30 23.732 23.732 30 16 30C8.26801 30 2 23.732 2 16ZM17.5 10C17.5 9.17157 16.8284 8.5 16 8.5C15.1716 8.5 14.5 9.17157 14.5 10V16C14.5 16.3978 14.658 16.7794 14.9393 17.0607L18.9393 21.0607C19.5251 21.6464 20.4749 21.6464 21.0607 21.0607C21.6464 20.4749 21.6464 19.5251 21.0607 18.9393L17.5 15.3787V10Z"
+        fill={fill}
       />
     </Svg>
   );
 };
 
 ClockFilled.propTypes = {
-  stroke: PropTypes.string,
   size: PropTypes.oneOf([16, 20, 24, 32]),
   weight: PropTypes.oneOf(["REGULAR", "BOLD"]),
   fill: PropTypes.string,
 };
 
 ClockFilled.defaultProps = {
-  stroke: colors.iconOn,
   size: 20,
   weight: "BOLD",
   fill: colors.iconDefault,

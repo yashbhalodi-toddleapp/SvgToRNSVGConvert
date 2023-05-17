@@ -39,6 +39,7 @@ import GlobeOutlined from "./GlobeOutlined.js";
 import GoalsOutlined from "./GoalsOutlined.js";
 import GridFilled from "./GridFilled.js";
 import HamburgerOutlined from "./HamburgerOutlined.js";
+import HeartFilled from "./HeartFilled.js";
 import HeartOutlined from "./HeartOutlined.js";
 import HomeOutlined from "./HomeOutlined.js";
 import ImageSquareOutlined from "./ImageSquareOutlined.js";
@@ -53,6 +54,7 @@ import LogoutOutlined from "./LogoutOutlined.js";
 import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
+import MoreHorizontalDotsCircle from "./MoreHorizontalDotsCircle.js";
 import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
 import PageDottedOutlined from "./PageDottedOutlined.js";
@@ -145,6 +147,7 @@ export {
   GoalsOutlined,
   GridFilled,
   HamburgerOutlined,
+  HeartFilled,
   HeartOutlined,
   HomeOutlined,
   ImageSquareOutlined,
@@ -159,6 +162,7 @@ export {
   LoudspeakerFilled,
   LoudspeakerOutlined,
   MicrophoneOutlined,
+  MoreHorizontalDotsCircle,
   MoreHorizontalDotsCircleFilled,
   NotificationBellFilled,
   PageDottedOutlined,

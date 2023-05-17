@@ -4,7 +4,7 @@ import Svg, { Path } from "react-native-svg";
 import { colors } from "js/Common/UIElements/colors";
 
 const WarningCircleFilled = (props) => {
-  const { size, weight, fill, stroke } = props;
+  const { size, weight, fill } = props;
 
   if (weight === "REGULAR") {
     return (
@@ -16,16 +16,10 @@ const WarningCircleFilled = (props) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <Path
-          d="M16 2C8.26802 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2Z"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M2 16C2 8.268 8.268 2 16 2S30 8.268 30 16c0 7.732 -6.268 14 -14 14C8.268 30 2 23.732 2 16Zm13 -6a1 1 0 1 1 2 0v7a1 1 0 1 1 -2 0V10ZM16 20a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z"
           fill={fill}
-        />
-        <Path
-          d="M16 9C15.4477 9 15 9.44772 15 10V17C15 17.5523 15.4477 18 16 18C16.5523 18 17 17.5523 17 17V10C17 9.44772 16.5523 9 16 9Z"
-          fill={stroke}
-        />
-        <Path
-          d="M17.5 21.5C17.5 20.6716 16.8284 20 16 20C15.1716 20 14.5 20.6716 14.5 21.5C14.5 22.3284 15.1716 23 16 23C16.8284 23 17.5 22.3284 17.5 21.5Z"
-          fill={stroke}
         />
       </Svg>
     );
@@ -40,36 +34,22 @@ const WarningCircleFilled = (props) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M16 2C8.26802 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2Z"
-        fill={fill}
-      />
-      <Path
-        d="M14.5 10.5C14.5 9.67157 15.1716 9 16 9V9C16.8284 9 17.5 9.67157 17.5 10.5V16.5C17.5 17.3284 16.8284 18 16 18V18C15.1716 18 14.5 17.3284 14.5 16.5V10.5Z"
-        fill={stroke}
-      />
-      <Path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M16 9C15.1716 9 14.5 9.67157 14.5 10.5V16.5C14.5 17.3284 15.1716 18 16 18C16.8284 18 17.5 17.3284 17.5 16.5V10.5C17.5 9.67157 16.8284 9 16 9ZM16.5 16.5V10.5C16.5 10.2239 16.2761 10 16 10C15.7239 10 15.5 10.2239 15.5 10.5V16.5C15.5 16.7761 15.7239 17 16 17C16.2761 17 16.5 16.7761 16.5 16.5Z"
-        fill={stroke}
-      />
-      <Path
-        d="M17.5 21.5C17.5 20.6716 16.8284 20 16 20C15.1716 20 14.5 20.6716 14.5 21.5C14.5 22.3284 15.1716 23 16 23C16.8284 23 17.5 22.3284 17.5 21.5Z"
-        fill={stroke}
+        d="M2 16C2 8.26801 8.26802 2 16 2C23.732 2 30 8.26801 30 16C30 23.732 23.732 30 16 30C8.26801 30 2 23.732 2 16ZM14.5 10.5C14.5 9.67157 15.1716 9 16 9C16.8284 9 17.5 9.67157 17.5 10.5V16.5C17.5 17.3284 16.8284 18 16 18C15.1716 18 14.5 17.3284 14.5 16.5V10.5ZM17.5 21.5C17.5 20.6716 16.8284 20 16 20C15.1716 20 14.5 20.6716 14.5 21.5C14.5 22.3284 15.1716 23 16 23C16.8284 23 17.5 22.3284 17.5 21.5Z"
+        fill={fill}
       />
     </Svg>
   );
 };
 
 WarningCircleFilled.propTypes = {
-  stroke: PropTypes.string,
   size: PropTypes.oneOf([16, 20, 24, 32]),
   weight: PropTypes.oneOf(["REGULAR", "BOLD"]),
   fill: PropTypes.string,
 };
 
 WarningCircleFilled.defaultProps = {
-  stroke: colors.iconOn,
   size: 20,
   weight: "BOLD",
   fill: colors.iconDefault,
