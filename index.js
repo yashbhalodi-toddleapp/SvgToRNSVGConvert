@@ -1,5 +1,6 @@
 import tmp from "./template.js";
 import tmpRegular from "./templateRegular.js";
+import coloredTmp from "./coloredTemplate.js";
 import { transform } from "@svgr/core";
 import path from "path";
 import { readFile, writeFile, readdir } from "fs/promises";
@@ -54,15 +55,17 @@ const getSvg = async (svgPath) => {
 const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
   const svgCode = await getSvg(svgFile);
 
+  const isColored = svgFile.includes("Colored");
+
   const jsCode = await transform(
     svgCode,
-    { ...config, template: tmp },
+    { ...config, template: isColored ? coloredTmp : tmp },
     { componentName: componentName, filePath: `./output/${componentName}.js` }
   );
 
   const regularPath = `${regularDir}/${componentName}.svg`;
   const regularSvgCode = await getSvg(regularPath);
-  const hasRegularWeight = regularSvgCode !== "";
+  const hasRegularWeight = regularDir !== "" && regularSvgCode !== "";
 
   let resultJSCode;
 
@@ -109,7 +112,9 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
     const weightLineIndex = lines.findIndex(
       (line) => line === `  weight: PropTypes.oneOf(["REGULAR", "BOLD"]),`
     );
-    lines.splice(weightLineIndex, 1, `  weight: PropTypes.oneOf(["BOLD"]),`);
+    if (weightLineIndex !== -1) {
+      lines.splice(weightLineIndex, 1, `  weight: PropTypes.oneOf(["BOLD"]),`);
+    }
   }
 
   resultJSCode = lines.join("\n");
@@ -177,6 +182,7 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
   return {
     hasRegularWeight,
     componentName,
+    isColored,
     // hasStrokeAndFill: isFilledIcon,
   };
 };
@@ -184,10 +190,15 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
 const main = async () => {
   const inputDir = "./input/Bold";
   const regularDir = "./input/Regular";
+  const coloredDir = "./input/Colored";
   const allBoldFiles = await readdir(inputDir);
   const allRegularFiles = await readdir(regularDir);
+  const allColoredFiles = await readdir(coloredDir);
   const svgBoldFiles = allBoldFiles.filter((file) => file.endsWith(".svg"));
   const svgRegularFiles = allRegularFiles.filter((file) =>
+    file.endsWith(".svg")
+  );
+  const svgColoredFiles = allColoredFiles.filter((file) =>
     file.endsWith(".svg")
   );
 
@@ -200,6 +211,13 @@ const main = async () => {
       generateJSForSvgFile(componentName, filePath, regularDir)
     );
   });
+
+  svgColoredFiles.forEach((file) => {
+    const filePath = path.join(coloredDir, file);
+    const componentName = path.parse(filePath).name;
+    jsCodePromises.push(generateJSForSvgFile(componentName, filePath, ""));
+  });
+
   await Promise.all(jsCodePromises).then((values) => {
     const regularWeightIconCount = values.filter(
       (value) => value.hasRegularWeight
@@ -207,19 +225,24 @@ const main = async () => {
     // const hasStrokeAndFillCount = values.filter(
     //   (value) => value.hasStrokeAndFill
     // ).length;
+    const coloredIconCount = values.filter((value) => value.isColored).length;
 
     console.log("====== Input Summary ======");
     console.log(`Total icons: ${svgBoldFiles.length}`);
     console.log(`Regular weight icon: ${svgRegularFiles.length}`);
+    console.log(`Colored icon: ${svgColoredFiles.length}`);
 
     console.log("====== Output Summary ======");
     console.log(`Total icons: ${values.length}`);
     console.log(`Regular weight icon: ${regularWeightIconCount}`);
+    console.log(`Colored icon: ${coloredIconCount}`);
     // console.log(`Has Stroke and Fill both icon: ${hasStrokeAndFillCount}`);
     console.log("====== csv for summary ======");
-    console.log(`ComponentName,HasRegularWeight`);
+    console.log(`ComponentName,HasRegularWeight,IsColored`);
     values.forEach((value) => {
-      console.log(`${value.componentName},${value.hasRegularWeight}`);
+      console.log(
+        `${value.componentName},${value.hasRegularWeight},${value.isColored}`
+      );
     });
   });
 };
