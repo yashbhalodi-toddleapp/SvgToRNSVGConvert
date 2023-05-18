@@ -56,7 +56,6 @@ import LogoutOutlined from "./LogoutOutlined.js";
 import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
-import MoreHorizontalDotsCircle from "./MoreHorizontalDotsCircle.js";
 import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
 import PageDottedOutlined from "./PageDottedOutlined.js";
@@ -166,7 +165,6 @@ export {
   LoudspeakerFilled,
   LoudspeakerOutlined,
   MicrophoneOutlined,
-  MoreHorizontalDotsCircle,
   MoreHorizontalDotsCircleFilled,
   NotificationBellFilled,
   PageDottedOutlined,
