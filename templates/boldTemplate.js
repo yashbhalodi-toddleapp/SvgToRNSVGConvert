@@ -18,7 +18,7 @@ const propTypesTemplate = (
   
   ${componentName}.propTypes = {
     size: PropTypes.oneOf([16, 20, 24, 32]),
-    weight: PropTypes.oneOf(["REGULAR","BOLD"]),
+    weight: PropTypes.oneOf(["BOLD"]),
     fill: PropTypes.string,
   };
 

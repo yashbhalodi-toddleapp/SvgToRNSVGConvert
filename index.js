@@ -12,6 +12,11 @@ const coloredDir = "./input/Colored";
 
 const outputDir = "./output";
 
+const ICON_TYPE = {
+  MONOTONE: "MONOTONE",
+  COLORED: "COLORED",
+};
+
 const config = {
   plugins: ["@svgr/plugin-svgo", "@svgr/plugin-jsx", "@svgr/plugin-prettier"],
   dimensions: true,
@@ -59,55 +64,10 @@ const getSvg = async (svgPath) => {
   }
 };
 
-const generateJSForSvgFile = async ({
-  componentName,
-  svgFilePath,
-  template,
-}) => {
-  const svgCode = await getSvg(svgFilePath);
-
-  const isColored = svgFilePath.includes("Colored");
-
-  const jsCode = await transform(
-    svgCode,
-    {
-      ...config,
-      template,
-    },
-    { componentName }
-  );
-
-  const regularPath = `${regularDir}/${componentName}.svg`;
-  const regularSvgCode = await getSvg(regularPath);
-  const hasRegularWeight = regularDir !== "" && regularSvgCode !== "";
-
-  let resultJSCode;
-
-  if (!hasRegularWeight) {
-    resultJSCode = jsCode;
-  } else {
-    const regularJsCode = await transform(regularSvgCode, {
-      ...config,
-      template: regularTemplate,
-    });
-
-    const jsCodeLines = jsCode.split("\n");
-
-    const propDestructureLineIndex = jsCodeLines.findIndex((line) =>
-      line.includes("} = props")
-    );
-    const codeSnippet = `\nif (weight === "REGULAR") {
-        return ${regularJsCode.substring(1)};
-      }\n`;
-    jsCodeLines.splice(propDestructureLineIndex + 1, 0, codeSnippet);
-
-    const combinedJsCode = jsCodeLines.join("\n");
-
-    resultJSCode = combinedJsCode;
-  }
-
+const addBlankLines = ({ jsCode, componentName }) => {
+  let res = jsCode;
   // add empty line before component declaration
-  const lines = resultJSCode.split("\n");
+  const lines = res.split("\n");
   const componentDeclarationIndex = lines.findIndex(
     (line) => line === `const ${componentName} = (props) => {`
   );
@@ -137,53 +97,113 @@ const generateJSForSvgFile = async ({
   );
   lines.splice(exportLineIndex, 0, "");
 
-  // if regular weight icon doesn't exists, change `  weight: PropTypes.oneOf(["REGULAR","BOLD"]),` to `  weight: PropTypes.oneOf(["BOLD"]),`
-  if (!hasRegularWeight) {
-    const weightLineIndex = lines.findIndex(
-      (line) => line === `  weight: PropTypes.oneOf(["REGULAR", "BOLD"]),`
+  res = lines.join("\n");
+  return res;
+};
+
+const replaceHardCodedColorWithProp = ({ jsCode }) => {
+  let res = jsCode;
+
+  // replace fill="#808080", etc with fill={fill}
+  res = res.replace(/fill="#([0-9a-fA-F]{6})"/g, "fill={fill}");
+
+  // replace stroke="#808080", etc with stroke={fill}
+  res = res.replace(/stroke="#([0-9a-fA-F]{6})"/g, "stroke={fill}");
+
+  return res;
+};
+
+const modifyBoldJSToSupportRegularWeight = async ({
+  boldJsCode,
+  regularWeightSvgCode,
+}) => {
+  const regularJsCode = await transform(regularWeightSvgCode, {
+    ...config,
+    template: regularTemplate,
+  });
+
+  const jsCodeLines = boldJsCode.split("\n");
+
+  const propDestructureLineIndex = jsCodeLines.findIndex((line) =>
+    line.includes("} = props")
+  );
+  const codeSnippet = `\nif (weight === "REGULAR") {
+      return ${regularJsCode.substring(1)};
+    }\n`;
+  jsCodeLines.splice(propDestructureLineIndex + 1, 0, codeSnippet);
+
+  const weightLineIndex = jsCodeLines.findIndex(
+    (line) => line === `  weight: PropTypes.oneOf(["BOLD"]),`
+  );
+  if (weightLineIndex !== -1) {
+    jsCodeLines.splice(
+      weightLineIndex,
+      1,
+      `  weight: PropTypes.oneOf(["REGULAR", "BOLD"]),`
     );
-    if (weightLineIndex !== -1) {
-      lines.splice(weightLineIndex, 1, `  weight: PropTypes.oneOf(["BOLD"]),`);
+  }
+
+  const combinedJsCode = jsCodeLines.join("\n");
+  return combinedJsCode;
+};
+
+const generateJSForSvgFile = async ({
+  componentName,
+  svgFilePath,
+  template,
+  iconType,
+}) => {
+  const svgCode = await getSvg(svgFilePath);
+
+  const jsCode = await transform(
+    svgCode,
+    {
+      ...config,
+      template,
+    },
+    { componentName }
+  );
+
+  let resultJSCode = jsCode;
+  let hasRegularWeight = false;
+
+  if (iconType === ICON_TYPE.MONOTONE) {
+    const regularPath = `${regularDir}/${componentName}.svg`;
+    const regularSvgCode = await getSvg(regularPath);
+    hasRegularWeight = regularDir !== "" && regularSvgCode !== "";
+    if (hasRegularWeight) {
+      resultJSCode = await modifyBoldJSToSupportRegularWeight({
+        boldJsCode: jsCode,
+        regularWeightSvgCode: regularSvgCode,
+      });
     }
   }
 
-  resultJSCode = lines.join("\n");
+  resultJSCode = addBlankLines({ jsCode: resultJSCode, componentName });
 
-  if (!isColored) {
-    // replace fill="#808080", etc with fill={fill}
-    resultJSCode = resultJSCode.replace(
-      /fill="#([0-9a-fA-F]{6})"/g,
-      "fill={fill}"
-    );
-
-    // replace stroke="#808080", etc with stroke={fill}
-    resultJSCode = resultJSCode.replace(
-      /stroke="#([0-9a-fA-F]{6})"/g,
-      "stroke={fill}"
-    );
+  if (![ICON_TYPE.COLORED].includes(iconType)) {
+    resultJSCode = replaceHardCodedColorWithProp({ jsCode: resultJSCode });
   }
 
   await writeFile(`${outputDir}/${componentName}.js`, resultJSCode);
 
   return {
-    hasRegularWeight,
     componentName,
-    isColored,
+    hasRegularWeight,
+    iconType,
   };
 };
+
+const isSvgFile = (file) => file.endsWith(".svg");
 
 const main = async () => {
   const allBoldFiles = await readdir(inputDir);
   const allRegularFiles = await readdir(regularDir);
   const allColoredFiles = await readdir(coloredDir);
 
-  const svgBoldFiles = allBoldFiles.filter((file) => file.endsWith(".svg"));
-  const svgRegularFiles = allRegularFiles.filter((file) =>
-    file.endsWith(".svg")
-  );
-  const svgColoredFiles = allColoredFiles.filter((file) =>
-    file.endsWith(".svg")
-  );
+  const svgBoldFiles = allBoldFiles.filter(isSvgFile);
+  const svgRegularFiles = allRegularFiles.filter(isSvgFile);
+  const svgColoredFiles = allColoredFiles.filter(isSvgFile);
 
   const jsCodePromises = [];
   svgBoldFiles.forEach((file) => {
@@ -194,6 +214,7 @@ const main = async () => {
         componentName,
         svgFilePath,
         template: boldTemplate,
+        iconType: ICON_TYPE.MONOTONE,
       })
     );
   });
@@ -206,6 +227,7 @@ const main = async () => {
         componentName,
         svgFilePath,
         template: coloredTemplate,
+        iconType: ICON_TYPE.COLORED,
       })
     );
   });
@@ -228,10 +250,10 @@ const main = async () => {
     console.log(`Colored icon: ${coloredIconCount}`);
 
     console.log("====== csv for summary ======");
-    console.log(`ComponentName,HasRegularWeight,IsColored`);
+    console.log(`ComponentName,HasRegularWeight,iconType`);
     values.forEach((value) => {
       console.log(
-        `${value.componentName},${value.hasRegularWeight},${value.isColored}`
+        `${value.componentName},${value.hasRegularWeight},${value.iconType}`
       );
     });
   });
