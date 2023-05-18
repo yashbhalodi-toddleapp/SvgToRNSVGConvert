@@ -54,4 +54,7 @@ WarningCircleFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+WarningCircleFilled.displayName = "WarningCircleFilled";
+
 export default WarningCircleFilled;

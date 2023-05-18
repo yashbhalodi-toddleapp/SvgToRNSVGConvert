@@ -54,4 +54,7 @@ PlaneAngledOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PlaneAngledOutlined.displayName = "PlaneAngledOutlined";
+
 export default PlaneAngledOutlined;

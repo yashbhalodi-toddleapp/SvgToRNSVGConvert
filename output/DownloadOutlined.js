@@ -58,4 +58,7 @@ DownloadOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+DownloadOutlined.displayName = "DownloadOutlined";
+
 export default DownloadOutlined;

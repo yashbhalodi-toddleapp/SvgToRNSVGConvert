@@ -60,4 +60,7 @@ PlaceholderFileOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PlaceholderFileOutlined.displayName = "PlaceholderFileOutlined";
+
 export default PlaceholderFileOutlined;

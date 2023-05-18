@@ -54,4 +54,7 @@ EyeOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+EyeOutlined.displayName = "EyeOutlined";
+
 export default EyeOutlined;

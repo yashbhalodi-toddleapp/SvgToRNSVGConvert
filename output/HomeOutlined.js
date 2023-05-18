@@ -54,4 +54,7 @@ HomeOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+HomeOutlined.displayName = "HomeOutlined";
+
 export default HomeOutlined;

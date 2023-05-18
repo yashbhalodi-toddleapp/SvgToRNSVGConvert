@@ -54,4 +54,7 @@ SearchOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+SearchOutlined.displayName = "SearchOutlined";
+
 export default SearchOutlined;

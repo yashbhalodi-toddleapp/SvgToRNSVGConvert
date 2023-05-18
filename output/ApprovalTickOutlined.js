@@ -76,4 +76,7 @@ ApprovalTickOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ApprovalTickOutlined.displayName = "ApprovalTickOutlined";
+
 export default ApprovalTickOutlined;

@@ -36,4 +36,7 @@ NotificationBellFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+NotificationBellFilled.displayName = "NotificationBellFilled";
+
 export default NotificationBellFilled;

@@ -74,4 +74,7 @@ CameraOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+CameraOutlined.displayName = "CameraOutlined";
+
 export default CameraOutlined;

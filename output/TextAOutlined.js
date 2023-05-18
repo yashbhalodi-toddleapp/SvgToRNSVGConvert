@@ -60,4 +60,7 @@ TextAOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+TextAOutlined.displayName = "TextAOutlined";
+
 export default TextAOutlined;

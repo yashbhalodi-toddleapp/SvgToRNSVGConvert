@@ -62,4 +62,7 @@ RecordOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+RecordOutlined.displayName = "RecordOutlined";
+
 export default RecordOutlined;

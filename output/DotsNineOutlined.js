@@ -114,4 +114,7 @@ DotsNineOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+DotsNineOutlined.displayName = "DotsNineOutlined";
+
 export default DotsNineOutlined;

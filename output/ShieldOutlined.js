@@ -54,4 +54,7 @@ ShieldOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ShieldOutlined.displayName = "ShieldOutlined";
+
 export default ShieldOutlined;

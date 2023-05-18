@@ -78,4 +78,7 @@ ScopeAndSequenceOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ScopeAndSequenceOutlined.displayName = "ScopeAndSequenceOutlined";
+
 export default ScopeAndSequenceOutlined;

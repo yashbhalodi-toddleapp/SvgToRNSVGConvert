@@ -66,4 +66,7 @@ ThreeDotsHorizontalOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ThreeDotsHorizontalOutlined.displayName = "ThreeDotsHorizontalOutlined";
+
 export default ThreeDotsHorizontalOutlined;

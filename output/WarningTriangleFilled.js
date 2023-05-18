@@ -54,4 +54,7 @@ WarningTriangleFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+WarningTriangleFilled.displayName = "WarningTriangleFilled";
+
 export default WarningTriangleFilled;

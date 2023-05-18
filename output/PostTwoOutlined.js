@@ -74,4 +74,7 @@ PostTwoOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PostTwoOutlined.displayName = "PostTwoOutlined";
+
 export default PostTwoOutlined;

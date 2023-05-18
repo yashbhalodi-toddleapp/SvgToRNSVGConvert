@@ -47,4 +47,7 @@ GoogleColored.propTypes = {
 GoogleColored.defaultProps = {
   size: 20,
 };
+
+GoogleColored.displayName = "GoogleColored";
+
 export default GoogleColored;

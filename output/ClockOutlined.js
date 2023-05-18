@@ -62,4 +62,7 @@ ClockOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ClockOutlined.displayName = "ClockOutlined";
+
 export default ClockOutlined;

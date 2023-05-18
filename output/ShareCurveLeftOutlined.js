@@ -54,4 +54,7 @@ ShareCurveLeftOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ShareCurveLeftOutlined.displayName = "ShareCurveLeftOutlined";
+
 export default ShareCurveLeftOutlined;

@@ -54,4 +54,7 @@ HeartOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+HeartOutlined.displayName = "HeartOutlined";
+
 export default HeartOutlined;

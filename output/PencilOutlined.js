@@ -54,4 +54,7 @@ PencilOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PencilOutlined.displayName = "PencilOutlined";
+
 export default PencilOutlined;

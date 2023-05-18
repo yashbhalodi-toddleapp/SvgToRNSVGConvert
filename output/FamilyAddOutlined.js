@@ -90,4 +90,7 @@ FamilyAddOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+FamilyAddOutlined.displayName = "FamilyAddOutlined";
+
 export default FamilyAddOutlined;

@@ -54,4 +54,7 @@ BellOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+BellOutlined.displayName = "BellOutlined";
+
 export default BellOutlined;

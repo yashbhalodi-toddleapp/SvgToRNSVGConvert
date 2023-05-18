@@ -32,4 +32,7 @@ FolderFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+FolderFilled.displayName = "FolderFilled";
+
 export default FolderFilled;

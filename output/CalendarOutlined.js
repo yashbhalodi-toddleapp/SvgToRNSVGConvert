@@ -54,4 +54,7 @@ CalendarOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+CalendarOutlined.displayName = "CalendarOutlined";
+
 export default CalendarOutlined;

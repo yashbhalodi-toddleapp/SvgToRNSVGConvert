@@ -44,4 +44,7 @@ GridFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+GridFilled.displayName = "GridFilled";
+
 export default GridFilled;

@@ -52,4 +52,7 @@ AddOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+AddOutlined.displayName = "AddOutlined";
+
 export default AddOutlined;

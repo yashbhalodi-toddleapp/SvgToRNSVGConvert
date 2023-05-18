@@ -66,4 +66,7 @@ ThreeDotsVerticalOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ThreeDotsVerticalOutlined.displayName = "ThreeDotsVerticalOutlined";
+
 export default ThreeDotsVerticalOutlined;

@@ -54,4 +54,7 @@ PlaneAngledFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PlaneAngledFilled.displayName = "PlaneAngledFilled";
+
 export default PlaneAngledFilled;

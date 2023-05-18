@@ -102,4 +102,7 @@ PageGridOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PageGridOutlined.displayName = "PageGridOutlined";
+
 export default PageGridOutlined;

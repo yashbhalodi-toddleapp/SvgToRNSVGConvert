@@ -58,4 +58,7 @@ LinkOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+LinkOutlined.displayName = "LinkOutlined";
+
 export default LinkOutlined;

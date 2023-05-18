@@ -66,4 +66,7 @@ HamburgerOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+HamburgerOutlined.displayName = "HamburgerOutlined";
+
 export default HamburgerOutlined;

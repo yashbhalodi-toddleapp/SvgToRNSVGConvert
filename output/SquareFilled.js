@@ -29,4 +29,7 @@ SquareFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+SquareFilled.displayName = "SquareFilled";
+
 export default SquareFilled;

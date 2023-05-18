@@ -34,4 +34,7 @@ LoudspeakerFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+LoudspeakerFilled.displayName = "LoudspeakerFilled";
+
 export default LoudspeakerFilled;

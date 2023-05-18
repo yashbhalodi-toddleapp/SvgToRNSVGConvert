@@ -54,4 +54,7 @@ EnvelopePlainOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+EnvelopePlainOutlined.displayName = "EnvelopePlainOutlined";
+
 export default EnvelopePlainOutlined;

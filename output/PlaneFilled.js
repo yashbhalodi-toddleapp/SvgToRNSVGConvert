@@ -54,4 +54,7 @@ PlaneFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PlaneFilled.displayName = "PlaneFilled";
+
 export default PlaneFilled;

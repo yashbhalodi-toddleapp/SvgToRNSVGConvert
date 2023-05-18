@@ -32,4 +32,7 @@ HeartFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+HeartFilled.displayName = "HeartFilled";
+
 export default HeartFilled;

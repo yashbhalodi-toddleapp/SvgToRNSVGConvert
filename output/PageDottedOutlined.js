@@ -82,4 +82,7 @@ PageDottedOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PageDottedOutlined.displayName = "PageDottedOutlined";
+
 export default PageDottedOutlined;

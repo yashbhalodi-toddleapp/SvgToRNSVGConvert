@@ -118,4 +118,7 @@ Print.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+Print.displayName = "Print";
+
 export default Print;

@@ -52,4 +52,7 @@ CloseOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+CloseOutlined.displayName = "CloseOutlined";
+
 export default CloseOutlined;

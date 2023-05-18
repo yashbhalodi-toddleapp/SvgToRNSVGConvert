@@ -54,4 +54,7 @@ ShapesOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ShapesOutlined.displayName = "ShapesOutlined";
+
 export default ShapesOutlined;

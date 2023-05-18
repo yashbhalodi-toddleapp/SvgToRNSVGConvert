@@ -62,4 +62,7 @@ LockOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+LockOutlined.displayName = "LockOutlined";
+
 export default LockOutlined;

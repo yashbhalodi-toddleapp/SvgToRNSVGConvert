@@ -54,4 +54,7 @@ GlobeOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+GlobeOutlined.displayName = "GlobeOutlined";
+
 export default GlobeOutlined;

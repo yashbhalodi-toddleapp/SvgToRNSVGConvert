@@ -58,4 +58,7 @@ UploadOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+UploadOutlined.displayName = "UploadOutlined";
+
 export default UploadOutlined;

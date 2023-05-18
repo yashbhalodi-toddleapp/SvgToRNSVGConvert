@@ -36,4 +36,7 @@ UnitPlanFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+UnitPlanFilled.displayName = "UnitPlanFilled";
+
 export default UnitPlanFilled;

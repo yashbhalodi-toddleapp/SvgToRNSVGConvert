@@ -62,4 +62,7 @@ UnitPlanOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+UnitPlanOutlined.displayName = "UnitPlanOutlined";
+
 export default UnitPlanOutlined;

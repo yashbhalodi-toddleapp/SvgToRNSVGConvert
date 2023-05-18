@@ -54,4 +54,7 @@ ImageSquareOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ImageSquareOutlined.displayName = "ImageSquareOutlined";
+
 export default ImageSquareOutlined;

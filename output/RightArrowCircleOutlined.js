@@ -62,4 +62,7 @@ RightArrowCircleOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+RightArrowCircleOutlined.displayName = "RightArrowCircleOutlined";
+
 export default RightArrowCircleOutlined;

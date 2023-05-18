@@ -54,4 +54,7 @@ LoudspeakerOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+LoudspeakerOutlined.displayName = "LoudspeakerOutlined";
+
 export default LoudspeakerOutlined;

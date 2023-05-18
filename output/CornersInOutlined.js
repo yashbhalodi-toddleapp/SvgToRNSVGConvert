@@ -74,4 +74,7 @@ CornersInOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+CornersInOutlined.displayName = "CornersInOutlined";
+
 export default CornersInOutlined;

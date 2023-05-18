@@ -50,4 +50,7 @@ RightArrowOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+RightArrowOutlined.displayName = "RightArrowOutlined";
+
 export default RightArrowOutlined;

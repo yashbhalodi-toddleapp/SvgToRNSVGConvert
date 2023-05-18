@@ -54,4 +54,7 @@ FilterOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+FilterOutlined.displayName = "FilterOutlined";
+
 export default FilterOutlined;

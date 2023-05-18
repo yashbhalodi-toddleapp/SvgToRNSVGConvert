@@ -78,4 +78,7 @@ CommentDotsRightOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+CommentDotsRightOutlined.displayName = "CommentDotsRightOutlined";
+
 export default CommentDotsRightOutlined;

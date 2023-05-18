@@ -36,4 +36,7 @@ PauseFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PauseFilled.displayName = "PauseFilled";
+
 export default PauseFilled;

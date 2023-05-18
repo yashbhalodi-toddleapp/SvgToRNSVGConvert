@@ -54,4 +54,7 @@ ShareNetworkOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ShareNetworkOutlined.displayName = "ShareNetworkOutlined";
+
 export default ShareNetworkOutlined;

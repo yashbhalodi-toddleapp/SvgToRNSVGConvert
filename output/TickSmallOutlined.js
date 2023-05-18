@@ -54,4 +54,7 @@ TickSmallOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+TickSmallOutlined.displayName = "TickSmallOutlined";
+
 export default TickSmallOutlined;

@@ -62,4 +62,7 @@ DeleteOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+DeleteOutlined.displayName = "DeleteOutlined";
+
 export default DeleteOutlined;

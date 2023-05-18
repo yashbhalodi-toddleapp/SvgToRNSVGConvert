@@ -43,4 +43,7 @@ GoogleDriveColoured.propTypes = {
 GoogleDriveColoured.defaultProps = {
   size: 20,
 };
+
+GoogleDriveColoured.displayName = "GoogleDriveColoured";
+
 export default GoogleDriveColoured;

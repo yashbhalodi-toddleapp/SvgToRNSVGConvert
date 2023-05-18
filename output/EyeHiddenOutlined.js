@@ -50,4 +50,7 @@ EyeHiddenOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+EyeHiddenOutlined.displayName = "EyeHiddenOutlined";
+
 export default EyeHiddenOutlined;

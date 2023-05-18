@@ -58,4 +58,7 @@ ArrowCircleLeftFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ArrowCircleLeftFilled.displayName = "ArrowCircleLeftFilled";
+
 export default ArrowCircleLeftFilled;

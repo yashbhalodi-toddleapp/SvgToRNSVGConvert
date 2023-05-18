@@ -78,4 +78,7 @@ ClockAlarmOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ClockAlarmOutlined.displayName = "ClockAlarmOutlined";
+
 export default ClockAlarmOutlined;

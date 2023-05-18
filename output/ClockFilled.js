@@ -54,4 +54,7 @@ ClockFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ClockFilled.displayName = "ClockFilled";
+
 export default ClockFilled;

@@ -70,4 +70,7 @@ AssessmentOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+AssessmentOutlined.displayName = "AssessmentOutlined";
+
 export default AssessmentOutlined;

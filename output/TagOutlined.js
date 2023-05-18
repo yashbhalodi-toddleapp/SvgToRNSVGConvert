@@ -64,4 +64,7 @@ TagOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+TagOutlined.displayName = "TagOutlined";
+
 export default TagOutlined;

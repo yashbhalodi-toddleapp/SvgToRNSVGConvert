@@ -54,4 +54,7 @@ FolderOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+FolderOutlined.displayName = "FolderOutlined";
+
 export default FolderOutlined;

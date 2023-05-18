@@ -50,4 +50,7 @@ RefreshArrowOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+RefreshArrowOutlined.displayName = "RefreshArrowOutlined";
+
 export default RefreshArrowOutlined;

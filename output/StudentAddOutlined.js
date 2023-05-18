@@ -62,4 +62,7 @@ StudentAddOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+StudentAddOutlined.displayName = "StudentAddOutlined";
+
 export default StudentAddOutlined;

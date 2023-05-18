@@ -84,4 +84,7 @@ ArrowOutOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ArrowOutOutlined.displayName = "ArrowOutOutlined";
+
 export default ArrowOutOutlined;

@@ -62,4 +62,7 @@ TickCircleOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+TickCircleOutlined.displayName = "TickCircleOutlined";
+
 export default TickCircleOutlined;

@@ -58,4 +58,7 @@ MicrophoneOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+MicrophoneOutlined.displayName = "MicrophoneOutlined";
+
 export default MicrophoneOutlined;

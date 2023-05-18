@@ -54,4 +54,7 @@ ChatDiscussionOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ChatDiscussionOutlined.displayName = "ChatDiscussionOutlined";
+
 export default ChatDiscussionOutlined;

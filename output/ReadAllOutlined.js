@@ -90,4 +90,7 @@ ReadAllOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ReadAllOutlined.displayName = "ReadAllOutlined";
+
 export default ReadAllOutlined;

@@ -54,4 +54,7 @@ PaperClipAngleOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PaperClipAngleOutlined.displayName = "PaperClipAngleOutlined";
+
 export default PaperClipAngleOutlined;

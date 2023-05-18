@@ -54,4 +54,7 @@ VideoOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+VideoOutlined.displayName = "VideoOutlined";
+
 export default VideoOutlined;

@@ -90,4 +90,7 @@ ListBulletsOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ListBulletsOutlined.displayName = "ListBulletsOutlined";
+
 export default ListBulletsOutlined;

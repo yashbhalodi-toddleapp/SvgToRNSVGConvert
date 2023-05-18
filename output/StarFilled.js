@@ -32,4 +32,7 @@ StarFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+StarFilled.displayName = "StarFilled";
+
 export default StarFilled;

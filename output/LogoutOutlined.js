@@ -58,4 +58,7 @@ LogoutOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+LogoutOutlined.displayName = "LogoutOutlined";
+
 export default LogoutOutlined;

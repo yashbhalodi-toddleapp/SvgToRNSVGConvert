@@ -54,4 +54,7 @@ ChevronLeftOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ChevronLeftOutlined.displayName = "ChevronLeftOutlined";
+
 export default ChevronLeftOutlined;

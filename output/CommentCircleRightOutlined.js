@@ -54,4 +54,7 @@ CommentCircleRightOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+CommentCircleRightOutlined.displayName = "CommentCircleRightOutlined";
+
 export default CommentCircleRightOutlined;

@@ -54,4 +54,7 @@ DeviceDesktopOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+DeviceDesktopOutlined.displayName = "DeviceDesktopOutlined";
+
 export default DeviceDesktopOutlined;

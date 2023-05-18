@@ -152,4 +152,7 @@ QRCodeOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+QRCodeOutlined.displayName = "QRCodeOutlined";
+
 export default QRCodeOutlined;

@@ -66,4 +66,7 @@ SettingsOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+SettingsOutlined.displayName = "SettingsOutlined";
+
 export default SettingsOutlined;

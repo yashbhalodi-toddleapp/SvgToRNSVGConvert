@@ -54,4 +54,7 @@ ProfileOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+ProfileOutlined.displayName = "ProfileOutlined";
+
 export default ProfileOutlined;

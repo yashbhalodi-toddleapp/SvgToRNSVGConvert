@@ -54,4 +54,7 @@ GoalsOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+GoalsOutlined.displayName = "GoalsOutlined";
+
 export default GoalsOutlined;

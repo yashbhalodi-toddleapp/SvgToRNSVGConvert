@@ -32,4 +32,7 @@ PlayFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+PlayFilled.displayName = "PlayFilled";
+
 export default PlayFilled;

@@ -62,4 +62,7 @@ AddCircleOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+AddCircleOutlined.displayName = "AddCircleOutlined";
+
 export default AddCircleOutlined;

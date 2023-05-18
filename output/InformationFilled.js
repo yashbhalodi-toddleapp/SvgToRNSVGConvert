@@ -54,4 +54,7 @@ InformationFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+InformationFilled.displayName = "InformationFilled";
+
 export default InformationFilled;

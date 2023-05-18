@@ -54,4 +54,7 @@ StudentOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+StudentOutlined.displayName = "StudentOutlined";
+
 export default StudentOutlined;

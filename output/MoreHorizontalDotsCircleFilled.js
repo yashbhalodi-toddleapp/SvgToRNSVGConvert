@@ -34,4 +34,7 @@ MoreHorizontalDotsCircleFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+MoreHorizontalDotsCircleFilled.displayName = "MoreHorizontalDotsCircleFilled";
+
 export default MoreHorizontalDotsCircleFilled;

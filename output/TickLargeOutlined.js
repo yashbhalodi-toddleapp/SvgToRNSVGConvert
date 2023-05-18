@@ -54,4 +54,7 @@ TickLargeOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+TickLargeOutlined.displayName = "TickLargeOutlined";
+
 export default TickLargeOutlined;

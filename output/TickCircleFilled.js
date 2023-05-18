@@ -54,4 +54,7 @@ TickCircleFilled.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+TickCircleFilled.displayName = "TickCircleFilled";
+
 export default TickCircleFilled;

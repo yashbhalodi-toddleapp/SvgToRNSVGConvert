@@ -70,4 +70,7 @@ InformationOutlined.defaultProps = {
   weight: "BOLD",
   fill: colors.iconDefault,
 };
+
+InformationOutlined.displayName = "InformationOutlined";
+
 export default InformationOutlined;
