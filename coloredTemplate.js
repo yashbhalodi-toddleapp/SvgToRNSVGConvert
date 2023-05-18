@@ -23,7 +23,7 @@ const propTypesTemplate = (
     size: 20,
   }
 
-  ${componentName}.displayName = "${componentName}";
+  ${componentName}.displayName = "${componentName}"
   
   ${exports}
     `;

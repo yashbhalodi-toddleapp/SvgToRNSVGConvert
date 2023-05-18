@@ -28,7 +28,7 @@ const propTypesTemplate = (
     fill: colors.iconDefault
   }
   
-  ${componentName}.displayName = "${componentName}";
+  ${componentName}.displayName = "${componentName}"
 
   ${exports}
     `;

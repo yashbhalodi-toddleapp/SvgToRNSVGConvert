@@ -107,6 +107,19 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
   );
   lines.splice(defaultPropsLineIndex, 0, "");
 
+  // add empty line before displayName declaration
+  const displayNameLineIndex = lines.findIndex(
+    (line) => line === `${componentName}.displayName = "${componentName}"`
+  );
+  console.dir({ displayNameLineIndex, componentName }, { depth: null });
+  lines.splice(displayNameLineIndex, 0, "\n");
+
+  // add empty line before export declaration
+  const exportLineIndex = lines.findIndex(
+    (line) => line === `export default ${componentName}`
+  );
+  lines.splice(exportLineIndex, 0, "");
+
   // if regular weight icon doesn't exists, change `  weight: PropTypes.oneOf(["REGULAR","BOLD"]),` to `  weight: PropTypes.oneOf(["BOLD"]),`
   if (!hasRegularWeight) {
     const weightLineIndex = lines.findIndex(
