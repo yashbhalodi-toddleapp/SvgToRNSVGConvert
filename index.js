@@ -111,7 +111,6 @@ const generateJSForSvgFile = async (componentName, svgFile, regularDir) => {
   const displayNameLineIndex = lines.findIndex(
     (line) => line === `${componentName}.displayName = "${componentName}"`
   );
-  console.dir({ displayNameLineIndex, componentName }, { depth: null });
   lines.splice(displayNameLineIndex, 0, "\n");
 
   // add empty line before export declaration
