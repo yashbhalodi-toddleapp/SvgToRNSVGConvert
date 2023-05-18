@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\" --loglevel error",
     "generate": "node index.js && ./generateIndexFile.sh && npm run pretty"
   },
   "author": "",
