@@ -237,7 +237,9 @@ const main = async () => {
       (value) => value.hasRegularWeight
     ).length;
 
-    const coloredIconCount = values.filter((value) => value.isColored).length;
+    const coloredIconCount = values.filter(
+      (value) => value.iconType === ICON_TYPE.COLORED
+    ).length;
 
     console.log("====== Input Summary ======");
     console.log(`Total icons: ${svgBoldFiles.length}`);
