@@ -22,6 +22,8 @@ const propTypesTemplate = (
   ${componentName}.defaultProps = {
     size: 20,
   }
+
+  ${componentName}.displayName = "${componentName}";
   
   ${exports}
     `;

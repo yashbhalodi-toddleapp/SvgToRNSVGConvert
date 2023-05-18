@@ -28,6 +28,8 @@ const propTypesTemplate = (
     fill: colors.iconDefault
   }
   
+  ${componentName}.displayName = "${componentName}";
+
   ${exports}
     `;
 };
