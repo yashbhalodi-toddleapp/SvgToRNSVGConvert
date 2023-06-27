@@ -59,8 +59,10 @@ import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
 import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
+import PDFOutlined from "./PDFOutlined.js";
 import PageDottedOutlined from "./PageDottedOutlined.js";
 import PageGridOutlined from "./PageGridOutlined.js";
+import PageSquareOutlined from "./PageSquareOutlined.js";
 import PaperClipAngleOutlined from "./PaperClipAngleOutlined.js";
 import PauseFilled from "./PauseFilled.js";
 import PencilLineOutlined from "./PencilLineOutlined.js";
@@ -86,8 +88,10 @@ import ShapesOutlined from "./ShapesOutlined.js";
 import ShareCurveLeftOutlined from "./ShareCurveLeftOutlined.js";
 import ShareCurveRightOutlined from "./ShareCurveRightOutlined.js";
 import ShareNetworkOutlined from "./ShareNetworkOutlined.js";
+import SheetsOutlined from "./SheetsOutlined.js";
 import ShieldCheckOutlined from "./ShieldCheckOutlined.js";
 import ShieldOutlined from "./ShieldOutlined.js";
+import SlidesOutlined from "./SlidesOutlined.js";
 import SquareFilled from "./SquareFilled.js";
 import StarFilled from "./StarFilled.js";
 import StudentAddOutlined from "./StudentAddOutlined.js";
@@ -104,8 +108,10 @@ import UnitPlanFilled from "./UnitPlanFilled.js";
 import UnitPlanOutlined from "./UnitPlanOutlined.js";
 import UploadOutlined from "./UploadOutlined.js";
 import VideoOutlined from "./VideoOutlined.js";
+import VolumeHighOutlined from "./VolumeHighOutlined.js";
 import WarningCircleFilled from "./WarningCircleFilled.js";
 import WarningTriangleFilled from "./WarningTriangleFilled.js";
+import ZipFileOutlined from "./ZipFileOutlined.js";
 
 export {
   AddCircleFilled,
@@ -169,8 +175,10 @@ export {
   MicrophoneOutlined,
   MoreHorizontalDotsCircleFilled,
   NotificationBellFilled,
+  PDFOutlined,
   PageDottedOutlined,
   PageGridOutlined,
+  PageSquareOutlined,
   PaperClipAngleOutlined,
   PauseFilled,
   PencilLineOutlined,
@@ -196,8 +204,10 @@ export {
   ShareCurveLeftOutlined,
   ShareCurveRightOutlined,
   ShareNetworkOutlined,
+  SheetsOutlined,
   ShieldCheckOutlined,
   ShieldOutlined,
+  SlidesOutlined,
   SquareFilled,
   StarFilled,
   StudentAddOutlined,
@@ -214,6 +224,8 @@ export {
   UnitPlanOutlined,
   UploadOutlined,
   VideoOutlined,
+  VolumeHighOutlined,
   WarningCircleFilled,
   WarningTriangleFilled,
+  ZipFileOutlined,
 };
