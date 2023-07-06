@@ -92,6 +92,7 @@ import SheetsOutlined from "./SheetsOutlined.js";
 import ShieldCheckOutlined from "./ShieldCheckOutlined.js";
 import ShieldOutlined from "./ShieldOutlined.js";
 import SlidesOutlined from "./SlidesOutlined.js";
+import SortOutlined from "./SortOutlined.js";
 import SquareFilled from "./SquareFilled.js";
 import StarFilled from "./StarFilled.js";
 import StudentAddOutlined from "./StudentAddOutlined.js";
@@ -208,6 +209,7 @@ export {
   ShieldCheckOutlined,
   ShieldOutlined,
   SlidesOutlined,
+  SortOutlined,
   SquareFilled,
   StarFilled,
   StudentAddOutlined,
