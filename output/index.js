@@ -48,6 +48,7 @@ import HomeOutlined from "./HomeOutlined.js";
 import ImageSquareOutlined from "./ImageSquareOutlined.js";
 import InformationFilled from "./InformationFilled.js";
 import InformationOutlined from "./InformationOutlined.js";
+import ItalicsOutlined from "./ItalicsOutlined.js";
 import LeftArrowCircleOutlined from "./LeftArrowCircleOutlined.js";
 import LeftArrowOutlined from "./LeftArrowOutlined.js";
 import LinkOutlined from "./LinkOutlined.js";
@@ -57,6 +58,7 @@ import LogoutOutlined from "./LogoutOutlined.js";
 import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
+import MinimizeOutlined from "./MinimizeOutlined.js";
 import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
 import PDFOutlined from "./PDFOutlined.js";
@@ -99,6 +101,11 @@ import StudentAddOutlined from "./StudentAddOutlined.js";
 import StudentOutlined from "./StudentOutlined.js";
 import TagOutlined from "./TagOutlined.js";
 import TextAOutlined from "./TextAOutlined.js";
+import TextAlignCenterOutlined from "./TextAlignCenterOutlined.js";
+import TextAlignLeftOutlined from "./TextAlignLeftOutlined.js";
+import TextAlignRightOutlined from "./TextAlignRightOutlined.js";
+import TextBoldOutlined from "./TextBoldOutlined.js";
+import TextUnderlinedOutlined from "./TextUnderlinedOutlined.js";
 import ThreeDotsHorizontalOutlined from "./ThreeDotsHorizontalOutlined.js";
 import ThreeDotsVerticalOutlined from "./ThreeDotsVerticalOutlined.js";
 import TickCircleFilled from "./TickCircleFilled.js";
@@ -165,6 +172,7 @@ export {
   ImageSquareOutlined,
   InformationFilled,
   InformationOutlined,
+  ItalicsOutlined,
   LeftArrowCircleOutlined,
   LeftArrowOutlined,
   LinkOutlined,
@@ -174,6 +182,7 @@ export {
   LoudspeakerFilled,
   LoudspeakerOutlined,
   MicrophoneOutlined,
+  MinimizeOutlined,
   MoreHorizontalDotsCircleFilled,
   NotificationBellFilled,
   PDFOutlined,
@@ -216,6 +225,11 @@ export {
   StudentOutlined,
   TagOutlined,
   TextAOutlined,
+  TextAlignCenterOutlined,
+  TextAlignLeftOutlined,
+  TextAlignRightOutlined,
+  TextBoldOutlined,
+  TextUnderlinedOutlined,
   ThreeDotsHorizontalOutlined,
   ThreeDotsVerticalOutlined,
   TickCircleFilled,
