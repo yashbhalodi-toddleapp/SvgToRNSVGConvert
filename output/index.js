@@ -35,6 +35,7 @@ import DownloadOutlined from "./DownloadOutlined.js";
 import EnvelopePlainOutlined from "./EnvelopePlainOutlined.js";
 import EyeHiddenOutlined from "./EyeHiddenOutlined.js";
 import EyeOutlined from "./EyeOutlined.js";
+import FAOutlined from "./FAOutlined.js";
 import FamilyAddOutlined from "./FamilyAddOutlined.js";
 import FamilyOutlined from "./FamilyOutlined.js";
 import FilterOutlined from "./FilterOutlined.js";
@@ -53,6 +54,7 @@ import ImageSquareOutlined from "./ImageSquareOutlined.js";
 import InformationFilled from "./InformationFilled.js";
 import InformationOutlined from "./InformationOutlined.js";
 import ItalicsOutlined from "./ItalicsOutlined.js";
+import LEOutlined from "./LEOutlined.js";
 import LeftArrowCircleOutlined from "./LeftArrowCircleOutlined.js";
 import LeftArrowOutlined from "./LeftArrowOutlined.js";
 import LinkOutlined from "./LinkOutlined.js";
@@ -82,11 +84,13 @@ import PostTwoOutlined from "./PostTwoOutlined.js";
 import Print from "./Print.js";
 import ProfileOutlined from "./ProfileOutlined.js";
 import QRCodeOutlined from "./QRCodeOutlined.js";
+import QuickTaskOutlined from "./QuickTaskOutlined.js";
 import ReadAllOutlined from "./ReadAllOutlined.js";
 import RecordOutlined from "./RecordOutlined.js";
 import RefreshArrowOutlined from "./RefreshArrowOutlined.js";
 import RightArrowCircleOutlined from "./RightArrowCircleOutlined.js";
 import RightArrowOutlined from "./RightArrowOutlined.js";
+import SAOutlined from "./SAOutlined.js";
 import ScopeAndSequenceOutlined from "./ScopeAndSequenceOutlined.js";
 import SearchOutlined from "./SearchOutlined.js";
 import SettingsOutlined from "./SettingsOutlined.js";
@@ -163,6 +167,7 @@ export {
   EnvelopePlainOutlined,
   EyeHiddenOutlined,
   EyeOutlined,
+  FAOutlined,
   FamilyAddOutlined,
   FamilyOutlined,
   FilterOutlined,
@@ -181,6 +186,7 @@ export {
   InformationFilled,
   InformationOutlined,
   ItalicsOutlined,
+  LEOutlined,
   LeftArrowCircleOutlined,
   LeftArrowOutlined,
   LinkOutlined,
@@ -210,11 +216,13 @@ export {
   Print,
   ProfileOutlined,
   QRCodeOutlined,
+  QuickTaskOutlined,
   ReadAllOutlined,
   RecordOutlined,
   RefreshArrowOutlined,
   RightArrowCircleOutlined,
   RightArrowOutlined,
+  SAOutlined,
   ScopeAndSequenceOutlined,
   SearchOutlined,
   SettingsOutlined,
