@@ -11,6 +11,10 @@ import AssessmentOutlined from "./AssessmentOutlined.js";
 import BellOutlined from "./BellOutlined.js";
 import CalendarOutlined from "./CalendarOutlined.js";
 import CameraOutlined from "./CameraOutlined.js";
+import CaretDownFilled from "./CaretDownFilled.js";
+import CaretLeftFilled from "./CaretLeftFilled.js";
+import CaretRightFilled from "./CaretRightFilled.js";
+import CaretUpFilled from "./CaretUpFilled.js";
 import ChatDiscussionOutlined from "./ChatDiscussionOutlined.js";
 import ChevronDownOutlined from "./ChevronDownOutlined.js";
 import ChevronLeftOutlined from "./ChevronLeftOutlined.js";
@@ -135,6 +139,10 @@ export {
   BellOutlined,
   CalendarOutlined,
   CameraOutlined,
+  CaretDownFilled,
+  CaretLeftFilled,
+  CaretRightFilled,
+  CaretUpFilled,
   ChatDiscussionOutlined,
   ChevronDownOutlined,
   ChevronLeftOutlined,
