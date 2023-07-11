@@ -39,6 +39,8 @@ import FAOutlined from "./FAOutlined.js";
 import FamilyAddOutlined from "./FamilyAddOutlined.js";
 import FamilyOutlined from "./FamilyOutlined.js";
 import FilterOutlined from "./FilterOutlined.js";
+import FilterThreeLinesFilled from "./FilterThreeLinesFilled.js";
+import FilterThreeLinesOutlined from "./FilterThreeLinesOutlined.js";
 import FolderFilled from "./FolderFilled.js";
 import FolderOutlined from "./FolderOutlined.js";
 import GlobeOutlined from "./GlobeOutlined.js";
@@ -171,6 +173,8 @@ export {
   FamilyAddOutlined,
   FamilyOutlined,
   FilterOutlined,
+  FilterThreeLinesFilled,
+  FilterThreeLinesOutlined,
   FolderFilled,
   FolderOutlined,
   GlobeOutlined,
