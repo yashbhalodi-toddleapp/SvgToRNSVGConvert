@@ -8,6 +8,8 @@ import ArrowCircleRightFilled from "./ArrowCircleRightFilled.js";
 import ArrowOutOutlined from "./ArrowOutOutlined.js";
 import AssessmentApplicableOutlined from "./AssessmentApplicableOutlined.js";
 import AssessmentOutlined from "./AssessmentOutlined.js";
+import BellCancelledOutlined from "./BellCancelledOutlined.js";
+import BellFilled from "./BellFilled.js";
 import BellOutlined from "./BellOutlined.js";
 import CalendarOutlined from "./CalendarOutlined.js";
 import CameraOutlined from "./CameraOutlined.js";
@@ -48,6 +50,7 @@ import GoalsOutlined from "./GoalsOutlined.js";
 import GoogleColored from "./GoogleColored.js";
 import GoogleDriveColoured from "./GoogleDriveColoured.js";
 import GridFilled from "./GridFilled.js";
+import GridOutlined from "./GridOutlined.js";
 import HamburgerOutlined from "./HamburgerOutlined.js";
 import HeartFilled from "./HeartFilled.js";
 import HeartOutlined from "./HeartOutlined.js";
@@ -56,6 +59,8 @@ import ImageSquareOutlined from "./ImageSquareOutlined.js";
 import InformationFilled from "./InformationFilled.js";
 import InformationOutlined from "./InformationOutlined.js";
 import ItalicsOutlined from "./ItalicsOutlined.js";
+import JournalFilled from "./JournalFilled.js";
+import JournalOutlined from "./JournalOutlined.js";
 import LEOutlined from "./LEOutlined.js";
 import LeftArrowCircleOutlined from "./LeftArrowCircleOutlined.js";
 import LeftArrowOutlined from "./LeftArrowOutlined.js";
@@ -142,6 +147,8 @@ export {
   ArrowOutOutlined,
   AssessmentApplicableOutlined,
   AssessmentOutlined,
+  BellCancelledOutlined,
+  BellFilled,
   BellOutlined,
   CalendarOutlined,
   CameraOutlined,
@@ -182,6 +189,7 @@ export {
   GoogleColored,
   GoogleDriveColoured,
   GridFilled,
+  GridOutlined,
   HamburgerOutlined,
   HeartFilled,
   HeartOutlined,
@@ -190,6 +198,8 @@ export {
   InformationFilled,
   InformationOutlined,
   ItalicsOutlined,
+  JournalFilled,
+  JournalOutlined,
   LEOutlined,
   LeftArrowCircleOutlined,
   LeftArrowOutlined,
