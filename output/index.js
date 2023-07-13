@@ -17,6 +17,7 @@ import CaretDownFilled from "./CaretDownFilled.js";
 import CaretLeftFilled from "./CaretLeftFilled.js";
 import CaretRightFilled from "./CaretRightFilled.js";
 import CaretUpFilled from "./CaretUpFilled.js";
+import ChatDiscussionFilled from "./ChatDiscussionFilled.js";
 import ChatDiscussionOutlined from "./ChatDiscussionOutlined.js";
 import ChevronDownOutlined from "./ChevronDownOutlined.js";
 import ChevronLeftOutlined from "./ChevronLeftOutlined.js";
@@ -156,6 +157,7 @@ export {
   CaretLeftFilled,
   CaretRightFilled,
   CaretUpFilled,
+  ChatDiscussionFilled,
   ChatDiscussionOutlined,
   ChevronDownOutlined,
   ChevronLeftOutlined,
