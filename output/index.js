@@ -34,6 +34,7 @@ import CornersOutOutlined from "./CornersOutOutlined.js";
 import DeleteOutlined from "./DeleteOutlined.js";
 import DeviceDesktopOutlined from "./DeviceDesktopOutlined.js";
 import DotsNineOutlined from "./DotsNineOutlined.js";
+import DownArrowOutlined from "./DownArrowOutlined.js";
 import DownloadOutlined from "./DownloadOutlined.js";
 import EnvelopePlainOutlined from "./EnvelopePlainOutlined.js";
 import EyeHiddenOutlined from "./EyeHiddenOutlined.js";
@@ -88,6 +89,7 @@ import PlaneAngledFilled from "./PlaneAngledFilled.js";
 import PlaneAngledOutlined from "./PlaneAngledOutlined.js";
 import PlaneFilled from "./PlaneFilled.js";
 import PlayFilled from "./PlayFilled.js";
+import PointerArrowOutlined from "./PointerArrowOutlined.js";
 import PostTwoOutlined from "./PostTwoOutlined.js";
 import Print from "./Print.js";
 import ProfileOutlined from "./ProfileOutlined.js";
@@ -130,6 +132,7 @@ import TickLargeOutlined from "./TickLargeOutlined.js";
 import TickSmallOutlined from "./TickSmallOutlined.js";
 import UnitPlanFilled from "./UnitPlanFilled.js";
 import UnitPlanOutlined from "./UnitPlanOutlined.js";
+import UpArrowOutlined from "./UpArrowOutlined.js";
 import UploadOutlined from "./UploadOutlined.js";
 import VideoOutlined from "./VideoOutlined.js";
 import VolumeHighOutlined from "./VolumeHighOutlined.js";
@@ -174,6 +177,7 @@ export {
   DeleteOutlined,
   DeviceDesktopOutlined,
   DotsNineOutlined,
+  DownArrowOutlined,
   DownloadOutlined,
   EnvelopePlainOutlined,
   EyeHiddenOutlined,
@@ -228,6 +232,7 @@ export {
   PlaneAngledOutlined,
   PlaneFilled,
   PlayFilled,
+  PointerArrowOutlined,
   PostTwoOutlined,
   Print,
   ProfileOutlined,
@@ -270,6 +275,7 @@ export {
   TickSmallOutlined,
   UnitPlanFilled,
   UnitPlanOutlined,
+  UpArrowOutlined,
   UploadOutlined,
   VideoOutlined,
   VolumeHighOutlined,
