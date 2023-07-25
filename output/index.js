@@ -8,9 +8,13 @@ import ArrowCircleRightFilled from "./ArrowCircleRightFilled.js";
 import ArrowOutOutlined from "./ArrowOutOutlined.js";
 import AssessmentApplicableOutlined from "./AssessmentApplicableOutlined.js";
 import AssessmentOutlined from "./AssessmentOutlined.js";
+import AttendanceFilled from "./AttendanceFilled.js";
+import AttendanceOutlined from "./AttendanceOutlined.js";
+import BackpackOutlined from "./BackpackOutlined.js";
 import BellCancelledOutlined from "./BellCancelledOutlined.js";
 import BellFilled from "./BellFilled.js";
 import BellOutlined from "./BellOutlined.js";
+import BoltFilled from "./BoltFilled.js";
 import CalendarOutlined from "./CalendarOutlined.js";
 import CameraOutlined from "./CameraOutlined.js";
 import CaretDownFilled from "./CaretDownFilled.js";
@@ -75,12 +79,14 @@ import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
 import MinimizeOutlined from "./MinimizeOutlined.js";
 import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js";
+import MultipleUsersOutlined from "./MultipleUsersOutlined.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
 import PDFOutlined from "./PDFOutlined.js";
 import PageDottedOutlined from "./PageDottedOutlined.js";
 import PageGridOutlined from "./PageGridOutlined.js";
 import PageSquareOutlined from "./PageSquareOutlined.js";
 import PaperClipAngleOutlined from "./PaperClipAngleOutlined.js";
+import PaperClipOutlined from "./PaperClipOutlined.js";
 import PauseFilled from "./PauseFilled.js";
 import PencilLineOutlined from "./PencilLineOutlined.js";
 import PencilOutlined from "./PencilOutlined.js";
@@ -117,6 +123,7 @@ import SquareFilled from "./SquareFilled.js";
 import StarFilled from "./StarFilled.js";
 import StudentAddOutlined from "./StudentAddOutlined.js";
 import StudentOutlined from "./StudentOutlined.js";
+import SwitchArrowOutlined from "./SwitchArrowOutlined.js";
 import TagOutlined from "./TagOutlined.js";
 import TextAOutlined from "./TextAOutlined.js";
 import TextAlignCenterOutlined from "./TextAlignCenterOutlined.js";
@@ -133,6 +140,7 @@ import TickSmallOutlined from "./TickSmallOutlined.js";
 import UnitPlanFilled from "./UnitPlanFilled.js";
 import UnitPlanOutlined from "./UnitPlanOutlined.js";
 import UpArrowOutlined from "./UpArrowOutlined.js";
+import UpDownArrowOutlined from "./UpDownArrowOutlined.js";
 import UploadOutlined from "./UploadOutlined.js";
 import VideoOutlined from "./VideoOutlined.js";
 import VolumeHighOutlined from "./VolumeHighOutlined.js";
@@ -151,9 +159,13 @@ export {
   ArrowOutOutlined,
   AssessmentApplicableOutlined,
   AssessmentOutlined,
+  AttendanceFilled,
+  AttendanceOutlined,
+  BackpackOutlined,
   BellCancelledOutlined,
   BellFilled,
   BellOutlined,
+  BoltFilled,
   CalendarOutlined,
   CameraOutlined,
   CaretDownFilled,
@@ -218,12 +230,14 @@ export {
   MicrophoneOutlined,
   MinimizeOutlined,
   MoreHorizontalDotsCircleFilled,
+  MultipleUsersOutlined,
   NotificationBellFilled,
   PDFOutlined,
   PageDottedOutlined,
   PageGridOutlined,
   PageSquareOutlined,
   PaperClipAngleOutlined,
+  PaperClipOutlined,
   PauseFilled,
   PencilLineOutlined,
   PencilOutlined,
@@ -260,6 +274,7 @@ export {
   StarFilled,
   StudentAddOutlined,
   StudentOutlined,
+  SwitchArrowOutlined,
   TagOutlined,
   TextAOutlined,
   TextAlignCenterOutlined,
@@ -276,6 +291,7 @@ export {
   UnitPlanFilled,
   UnitPlanOutlined,
   UpArrowOutlined,
+  UpDownArrowOutlined,
   UploadOutlined,
   VideoOutlined,
   VolumeHighOutlined,
