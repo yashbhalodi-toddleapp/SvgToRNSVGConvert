@@ -14,6 +14,7 @@ import BackpackOutlined from "./BackpackOutlined.js";
 import BellCancelledOutlined from "./BellCancelledOutlined.js";
 import BellFilled from "./BellFilled.js";
 import BellOutlined from "./BellOutlined.js";
+import BellRingOutlined from "./BellRingOutlined.js";
 import BoltFilled from "./BoltFilled.js";
 import CalendarOutlined from "./CalendarOutlined.js";
 import CameraOutlined from "./CameraOutlined.js";
@@ -165,6 +166,7 @@ export {
   BellCancelledOutlined,
   BellFilled,
   BellOutlined,
+  BellRingOutlined,
   BoltFilled,
   CalendarOutlined,
   CameraOutlined,
