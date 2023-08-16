@@ -138,6 +138,7 @@ import TickCircleFilled from "./TickCircleFilled.js";
 import TickCircleOutlined from "./TickCircleOutlined.js";
 import TickLargeOutlined from "./TickLargeOutlined.js";
 import TickSmallOutlined from "./TickSmallOutlined.js";
+import UnitLibraryOutlined from "./UnitLibraryOutlined.js";
 import UnitPlanFilled from "./UnitPlanFilled.js";
 import UnitPlanOutlined from "./UnitPlanOutlined.js";
 import UpArrowOutlined from "./UpArrowOutlined.js";
@@ -148,6 +149,7 @@ import VolumeHighOutlined from "./VolumeHighOutlined.js";
 import WarningCircleFilled from "./WarningCircleFilled.js";
 import WarningTriangleFilled from "./WarningTriangleFilled.js";
 import ZipFileOutlined from "./ZipFileOutlined.js";
+import ZzzOutlined from "./ZzzOutlined.js";
 
 export {
   AddCircleFilled,
@@ -290,6 +292,7 @@ export {
   TickCircleOutlined,
   TickLargeOutlined,
   TickSmallOutlined,
+  UnitLibraryOutlined,
   UnitPlanFilled,
   UnitPlanOutlined,
   UpArrowOutlined,
@@ -300,4 +303,5 @@ export {
   WarningCircleFilled,
   WarningTriangleFilled,
   ZipFileOutlined,
+  ZzzOutlined,
 };
