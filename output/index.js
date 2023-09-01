@@ -16,6 +16,7 @@ import BellFilled from "./BellFilled.js";
 import BellOutlined from "./BellOutlined.js";
 import BellRingOutlined from "./BellRingOutlined.js";
 import BoltFilled from "./BoltFilled.js";
+import BroomOutlined from "./BroomOutlined.js";
 import CalendarOutlined from "./CalendarOutlined.js";
 import CameraOutlined from "./CameraOutlined.js";
 import CaretDownFilled from "./CaretDownFilled.js";
@@ -170,6 +171,7 @@ export {
   BellOutlined,
   BellRingOutlined,
   BoltFilled,
+  BroomOutlined,
   CalendarOutlined,
   CameraOutlined,
   CaretDownFilled,
