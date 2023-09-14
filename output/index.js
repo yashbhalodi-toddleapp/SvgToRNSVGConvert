@@ -3,6 +3,7 @@ import AddCircleOutlined from "./AddCircleOutlined.js";
 import AddOutlined from "./AddOutlined.js";
 import AddTagOutlined from "./AddTagOutlined.js";
 import ApprovalTickOutlined from "./ApprovalTickOutlined.js";
+import ArchiveOutlined from "./ArchiveOutlined.js";
 import ArrowCircleLeftFilled from "./ArrowCircleLeftFilled.js";
 import ArrowCircleRightFilled from "./ArrowCircleRightFilled.js";
 import ArrowOutOutlined from "./ArrowOutOutlined.js";
@@ -80,6 +81,7 @@ import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
 import MinimizeOutlined from "./MinimizeOutlined.js";
+import MinusCircleOutlined from "./MinusCircleOutlined.js";
 import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js";
 import MultipleUsersOutlined from "./MultipleUsersOutlined.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
@@ -100,6 +102,7 @@ import PlayFilled from "./PlayFilled.js";
 import PointerArrowOutlined from "./PointerArrowOutlined.js";
 import PostTwoOutlined from "./PostTwoOutlined.js";
 import Print from "./Print.js";
+import ProfileAddOutlined from "./ProfileAddOutlined.js";
 import ProfileOutlined from "./ProfileOutlined.js";
 import QRCodeOutlined from "./QRCodeOutlined.js";
 import QuickTaskOutlined from "./QuickTaskOutlined.js";
@@ -158,6 +161,7 @@ export {
   AddOutlined,
   AddTagOutlined,
   ApprovalTickOutlined,
+  ArchiveOutlined,
   ArrowCircleLeftFilled,
   ArrowCircleRightFilled,
   ArrowOutOutlined,
@@ -235,6 +239,7 @@ export {
   LoudspeakerOutlined,
   MicrophoneOutlined,
   MinimizeOutlined,
+  MinusCircleOutlined,
   MoreHorizontalDotsCircleFilled,
   MultipleUsersOutlined,
   NotificationBellFilled,
@@ -255,6 +260,7 @@ export {
   PointerArrowOutlined,
   PostTwoOutlined,
   Print,
+  ProfileAddOutlined,
   ProfileOutlined,
   QRCodeOutlined,
   QuickTaskOutlined,
