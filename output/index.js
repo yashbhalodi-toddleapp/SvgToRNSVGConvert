@@ -26,6 +26,11 @@ import CaretRightFilled from "./CaretRightFilled.js";
 import CaretUpFilled from "./CaretUpFilled.js";
 import ChatDiscussionFilled from "./ChatDiscussionFilled.js";
 import ChatDiscussionOutlined from "./ChatDiscussionOutlined.js";
+import ChatDotsLeftOutlined from "./ChatDotsLeftOutlined.js";
+import ChatDotsOutlined from "./ChatDotsOutlined.js";
+import ChatQuoteOutlined from "./ChatQuoteOutlined.js";
+import ChatTextLeftOutlined from "./ChatTextLeftOutlined.js";
+import ChatTextOutlined from "./ChatTextOutlined.js";
 import ChevronDownOutlined from "./ChevronDownOutlined.js";
 import ChevronLeftOutlined from "./ChevronLeftOutlined.js";
 import ChevronRightOutlined from "./ChevronRightOutlined.js";
@@ -148,6 +153,7 @@ import UnitPlanOutlined from "./UnitPlanOutlined.js";
 import UpArrowOutlined from "./UpArrowOutlined.js";
 import UpDownArrowOutlined from "./UpDownArrowOutlined.js";
 import UploadOutlined from "./UploadOutlined.js";
+import UserCloseOutlined from "./UserCloseOutlined.js";
 import VideoOutlined from "./VideoOutlined.js";
 import VolumeHighOutlined from "./VolumeHighOutlined.js";
 import WarningCircleFilled from "./WarningCircleFilled.js";
@@ -184,6 +190,11 @@ export {
   CaretUpFilled,
   ChatDiscussionFilled,
   ChatDiscussionOutlined,
+  ChatDotsLeftOutlined,
+  ChatDotsOutlined,
+  ChatQuoteOutlined,
+  ChatTextLeftOutlined,
+  ChatTextOutlined,
   ChevronDownOutlined,
   ChevronLeftOutlined,
   ChevronRightOutlined,
@@ -306,6 +317,7 @@ export {
   UpArrowOutlined,
   UpDownArrowOutlined,
   UploadOutlined,
+  UserCloseOutlined,
   VideoOutlined,
   VolumeHighOutlined,
   WarningCircleFilled,
