@@ -2,6 +2,7 @@ import AddCircleFilled from "./AddCircleFilled.js";
 import AddCircleOutlined from "./AddCircleOutlined.js";
 import AddOutlined from "./AddOutlined.js";
 import AddTagOutlined from "./AddTagOutlined.js";
+import AppleOutlined from "./AppleOutlined.js";
 import ApprovalTickOutlined from "./ApprovalTickOutlined.js";
 import ArchiveOutlined from "./ArchiveOutlined.js";
 import ArrowCircleLeftFilled from "./ArrowCircleLeftFilled.js";
@@ -41,6 +42,7 @@ import ClockOutlined from "./ClockOutlined.js";
 import CloseOutlined from "./CloseOutlined.js";
 import CommentCircleRightOutlined from "./CommentCircleRightOutlined.js";
 import CommentDotsRightOutlined from "./CommentDotsRightOutlined.js";
+import CommentMultipleOutlined from "./CommentMultipleOutlined.js";
 import CornersInOutlined from "./CornersInOutlined.js";
 import CornersOutOutlined from "./CornersOutOutlined.js";
 import DeleteOutlined from "./DeleteOutlined.js";
@@ -89,6 +91,7 @@ import MinimizeOutlined from "./MinimizeOutlined.js";
 import MinusCircleOutlined from "./MinusCircleOutlined.js";
 import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js";
 import MultipleUsersOutlined from "./MultipleUsersOutlined.js";
+import NoteOutlined from "./NoteOutlined.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
 import PDFOutlined from "./PDFOutlined.js";
 import PageDottedOutlined from "./PageDottedOutlined.js";
@@ -105,6 +108,7 @@ import PlaneAngledOutlined from "./PlaneAngledOutlined.js";
 import PlaneFilled from "./PlaneFilled.js";
 import PlayFilled from "./PlayFilled.js";
 import PointerArrowOutlined from "./PointerArrowOutlined.js";
+import PostOneOutlined from "./PostOneOutlined.js";
 import PostTwoOutlined from "./PostTwoOutlined.js";
 import Print from "./Print.js";
 import ProfileAddOutlined from "./ProfileAddOutlined.js";
@@ -147,6 +151,7 @@ import TickCircleFilled from "./TickCircleFilled.js";
 import TickCircleOutlined from "./TickCircleOutlined.js";
 import TickLargeOutlined from "./TickLargeOutlined.js";
 import TickSmallOutlined from "./TickSmallOutlined.js";
+import ToiletOutlined from "./ToiletOutlined.js";
 import UnitLibraryOutlined from "./UnitLibraryOutlined.js";
 import UnitPlanFilled from "./UnitPlanFilled.js";
 import UnitPlanOutlined from "./UnitPlanOutlined.js";
@@ -158,6 +163,7 @@ import VideoOutlined from "./VideoOutlined.js";
 import VolumeHighOutlined from "./VolumeHighOutlined.js";
 import WarningCircleFilled from "./WarningCircleFilled.js";
 import WarningTriangleFilled from "./WarningTriangleFilled.js";
+import WorkbookOutlined from "./WorkbookOutlined.js";
 import ZipFileOutlined from "./ZipFileOutlined.js";
 import ZzzOutlined from "./ZzzOutlined.js";
 
@@ -166,6 +172,7 @@ export {
   AddCircleOutlined,
   AddOutlined,
   AddTagOutlined,
+  AppleOutlined,
   ApprovalTickOutlined,
   ArchiveOutlined,
   ArrowCircleLeftFilled,
@@ -205,6 +212,7 @@ export {
   CloseOutlined,
   CommentCircleRightOutlined,
   CommentDotsRightOutlined,
+  CommentMultipleOutlined,
   CornersInOutlined,
   CornersOutOutlined,
   DeleteOutlined,
@@ -253,6 +261,7 @@ export {
   MinusCircleOutlined,
   MoreHorizontalDotsCircleFilled,
   MultipleUsersOutlined,
+  NoteOutlined,
   NotificationBellFilled,
   PDFOutlined,
   PageDottedOutlined,
@@ -269,6 +278,7 @@ export {
   PlaneFilled,
   PlayFilled,
   PointerArrowOutlined,
+  PostOneOutlined,
   PostTwoOutlined,
   Print,
   ProfileAddOutlined,
@@ -311,6 +321,7 @@ export {
   TickCircleOutlined,
   TickLargeOutlined,
   TickSmallOutlined,
+  ToiletOutlined,
   UnitLibraryOutlined,
   UnitPlanFilled,
   UnitPlanOutlined,
@@ -322,6 +333,7 @@ export {
   VolumeHighOutlined,
   WarningCircleFilled,
   WarningTriangleFilled,
+  WorkbookOutlined,
   ZipFileOutlined,
   ZzzOutlined,
 };
