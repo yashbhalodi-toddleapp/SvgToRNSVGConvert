@@ -109,6 +109,7 @@ import PlaneFilled from "./PlaneFilled.js";
 import PlayFilled from "./PlayFilled.js";
 import PointerArrowOutlined from "./PointerArrowOutlined.js";
 import PostOneOutlined from "./PostOneOutlined.js";
+import PostTwoAddOutlined from "./PostTwoAddOutlined.js";
 import PostTwoOutlined from "./PostTwoOutlined.js";
 import Print from "./Print.js";
 import ProfileAddOutlined from "./ProfileAddOutlined.js";
@@ -118,10 +119,12 @@ import QuickTaskOutlined from "./QuickTaskOutlined.js";
 import ReadAllOutlined from "./ReadAllOutlined.js";
 import RecordOutlined from "./RecordOutlined.js";
 import RefreshArrowOutlined from "./RefreshArrowOutlined.js";
+import ResourceOutlined from "./ResourceOutlined.js";
 import RightArrowCircleOutlined from "./RightArrowCircleOutlined.js";
 import RightArrowOutlined from "./RightArrowOutlined.js";
 import SAOutlined from "./SAOutlined.js";
 import ScopeAndSequenceOutlined from "./ScopeAndSequenceOutlined.js";
+import ScoreBasedAssessment from "./ScoreBasedAssessment.js";
 import SearchOutlined from "./SearchOutlined.js";
 import SettingsOutlined from "./SettingsOutlined.js";
 import ShapesOutlined from "./ShapesOutlined.js";
@@ -164,6 +167,7 @@ import VolumeHighOutlined from "./VolumeHighOutlined.js";
 import WarningCircleFilled from "./WarningCircleFilled.js";
 import WarningTriangleFilled from "./WarningTriangleFilled.js";
 import WorkbookOutlined from "./WorkbookOutlined.js";
+import WorksheetClipboardOutlined from "./WorksheetClipboardOutlined.js";
 import ZipFileOutlined from "./ZipFileOutlined.js";
 import ZzzOutlined from "./ZzzOutlined.js";
 
@@ -279,6 +283,7 @@ export {
   PlayFilled,
   PointerArrowOutlined,
   PostOneOutlined,
+  PostTwoAddOutlined,
   PostTwoOutlined,
   Print,
   ProfileAddOutlined,
@@ -288,10 +293,12 @@ export {
   ReadAllOutlined,
   RecordOutlined,
   RefreshArrowOutlined,
+  ResourceOutlined,
   RightArrowCircleOutlined,
   RightArrowOutlined,
   SAOutlined,
   ScopeAndSequenceOutlined,
+  ScoreBasedAssessment,
   SearchOutlined,
   SettingsOutlined,
   ShapesOutlined,
@@ -334,6 +341,7 @@ export {
   WarningCircleFilled,
   WarningTriangleFilled,
   WorkbookOutlined,
+  WorksheetClipboardOutlined,
   ZipFileOutlined,
   ZzzOutlined,
 };
