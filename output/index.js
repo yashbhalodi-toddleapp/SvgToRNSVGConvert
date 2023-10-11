@@ -36,6 +36,8 @@ import ChevronDownOutlined from "./ChevronDownOutlined.js";
 import ChevronLeftOutlined from "./ChevronLeftOutlined.js";
 import ChevronRightOutlined from "./ChevronRightOutlined.js";
 import ChevronUpOutlined from "./ChevronUpOutlined.js";
+import ClassChannelOutlined from "./ClassChannelOutlined.js";
+import ClipboardPencilLinesOutlined from "./ClipboardPencilLinesOutlined.js";
 import ClockAlarmOutlined from "./ClockAlarmOutlined.js";
 import ClockFilled from "./ClockFilled.js";
 import ClockOutlined from "./ClockOutlined.js";
@@ -45,6 +47,7 @@ import CommentDotsRightOutlined from "./CommentDotsRightOutlined.js";
 import CommentMultipleOutlined from "./CommentMultipleOutlined.js";
 import CornersInOutlined from "./CornersInOutlined.js";
 import CornersOutOutlined from "./CornersOutOutlined.js";
+import CustomChannelOutlined from "./CustomChannelOutlined.js";
 import DeleteOutlined from "./DeleteOutlined.js";
 import DeviceDesktopOutlined from "./DeviceDesktopOutlined.js";
 import DotsNineOutlined from "./DotsNineOutlined.js";
@@ -55,6 +58,7 @@ import EyeHiddenOutlined from "./EyeHiddenOutlined.js";
 import EyeOutlined from "./EyeOutlined.js";
 import FAOutlined from "./FAOutlined.js";
 import FamilyAddOutlined from "./FamilyAddOutlined.js";
+import FamilyChannelOutlined from "./FamilyChannelOutlined.js";
 import FamilyOutlined from "./FamilyOutlined.js";
 import FilterOutlined from "./FilterOutlined.js";
 import FilterThreeLinesFilled from "./FilterThreeLinesFilled.js";
@@ -68,6 +72,7 @@ import GoogleDriveColoured from "./GoogleDriveColoured.js";
 import GridFilled from "./GridFilled.js";
 import GridOutlined from "./GridOutlined.js";
 import HamburgerOutlined from "./HamburgerOutlined.js";
+import HashtagOutlined from "./HashtagOutlined.js";
 import HeartFilled from "./HeartFilled.js";
 import HeartOutlined from "./HeartOutlined.js";
 import HomeOutlined from "./HomeOutlined.js";
@@ -86,6 +91,7 @@ import LockOutlined from "./LockOutlined.js";
 import LogoutOutlined from "./LogoutOutlined.js";
 import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
+import ManageMembersOutlined from "./ManageMembersOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
 import MinimizeOutlined from "./MinimizeOutlined.js";
 import MinusCircleOutlined from "./MinusCircleOutlined.js";
@@ -137,6 +143,7 @@ import ShieldOutlined from "./ShieldOutlined.js";
 import SlidesOutlined from "./SlidesOutlined.js";
 import SortOutlined from "./SortOutlined.js";
 import SquareFilled from "./SquareFilled.js";
+import StaffMemberOutlined from "./StaffMemberOutlined.js";
 import StarFilled from "./StarFilled.js";
 import StudentAddOutlined from "./StudentAddOutlined.js";
 import StudentOutlined from "./StudentOutlined.js";
@@ -210,6 +217,8 @@ export {
   ChevronLeftOutlined,
   ChevronRightOutlined,
   ChevronUpOutlined,
+  ClassChannelOutlined,
+  ClipboardPencilLinesOutlined,
   ClockAlarmOutlined,
   ClockFilled,
   ClockOutlined,
@@ -219,6 +228,7 @@ export {
   CommentMultipleOutlined,
   CornersInOutlined,
   CornersOutOutlined,
+  CustomChannelOutlined,
   DeleteOutlined,
   DeviceDesktopOutlined,
   DotsNineOutlined,
@@ -229,6 +239,7 @@ export {
   EyeOutlined,
   FAOutlined,
   FamilyAddOutlined,
+  FamilyChannelOutlined,
   FamilyOutlined,
   FilterOutlined,
   FilterThreeLinesFilled,
@@ -242,6 +253,7 @@ export {
   GridFilled,
   GridOutlined,
   HamburgerOutlined,
+  HashtagOutlined,
   HeartFilled,
   HeartOutlined,
   HomeOutlined,
@@ -260,6 +272,7 @@ export {
   LogoutOutlined,
   LoudspeakerFilled,
   LoudspeakerOutlined,
+  ManageMembersOutlined,
   MicrophoneOutlined,
   MinimizeOutlined,
   MinusCircleOutlined,
@@ -311,6 +324,7 @@ export {
   SlidesOutlined,
   SortOutlined,
   SquareFilled,
+  StaffMemberOutlined,
   StarFilled,
   StudentAddOutlined,
   StudentOutlined,
