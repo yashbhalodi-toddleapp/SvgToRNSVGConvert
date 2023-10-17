@@ -53,6 +53,7 @@ import DeviceDesktopOutlined from "./DeviceDesktopOutlined.js";
 import DotsNineOutlined from "./DotsNineOutlined.js";
 import DownArrowOutlined from "./DownArrowOutlined.js";
 import DownloadOutlined from "./DownloadOutlined.js";
+import EnvelopeDotOutlined from "./EnvelopeDotOutlined.js";
 import EnvelopePlainOutlined from "./EnvelopePlainOutlined.js";
 import EyeHiddenOutlined from "./EyeHiddenOutlined.js";
 import EyeOutlined from "./EyeOutlined.js";
@@ -234,6 +235,7 @@ export {
   DotsNineOutlined,
   DownArrowOutlined,
   DownloadOutlined,
+  EnvelopeDotOutlined,
   EnvelopePlainOutlined,
   EyeHiddenOutlined,
   EyeOutlined,
