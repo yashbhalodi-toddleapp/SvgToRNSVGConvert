@@ -45,6 +45,7 @@ import CloseOutlined from "./CloseOutlined.js";
 import CommentCircleRightOutlined from "./CommentCircleRightOutlined.js";
 import CommentDotsRightOutlined from "./CommentDotsRightOutlined.js";
 import CommentMultipleOutlined from "./CommentMultipleOutlined.js";
+import CommentTextOutlined from "./CommentTextOutlined.js";
 import CornersInOutlined from "./CornersInOutlined.js";
 import CornersOutOutlined from "./CornersOutOutlined.js";
 import CustomChannelOutlined from "./CustomChannelOutlined.js";
@@ -77,6 +78,7 @@ import HashtagOutlined from "./HashtagOutlined.js";
 import HeartFilled from "./HeartFilled.js";
 import HeartOutlined from "./HeartOutlined.js";
 import HomeOutlined from "./HomeOutlined.js";
+import HourglassOutlined from "./HourglassOutlined.js";
 import ImageSquareOutlined from "./ImageSquareOutlined.js";
 import InformationFilled from "./InformationFilled.js";
 import InformationOutlined from "./InformationOutlined.js";
@@ -88,11 +90,13 @@ import LeftArrowCircleOutlined from "./LeftArrowCircleOutlined.js";
 import LeftArrowOutlined from "./LeftArrowOutlined.js";
 import LinkOutlined from "./LinkOutlined.js";
 import ListBulletsOutlined from "./ListBulletsOutlined.js";
+import ListNumberedOutlined from "./ListNumberedOutlined.js";
 import LockOutlined from "./LockOutlined.js";
 import LogoutOutlined from "./LogoutOutlined.js";
 import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
 import ManageMembersOutlined from "./ManageMembersOutlined.js";
+import MentionOutlined from "./MentionOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
 import MinimizeOutlined from "./MinimizeOutlined.js";
 import MinusCircleOutlined from "./MinusCircleOutlined.js";
@@ -146,6 +150,7 @@ import SortOutlined from "./SortOutlined.js";
 import SquareFilled from "./SquareFilled.js";
 import StaffMemberOutlined from "./StaffMemberOutlined.js";
 import StarFilled from "./StarFilled.js";
+import StarsThreeFilled from "./StarsThreeFilled.js";
 import StudentAddOutlined from "./StudentAddOutlined.js";
 import StudentOutlined from "./StudentOutlined.js";
 import SwitchArrowOutlined from "./SwitchArrowOutlined.js";
@@ -163,6 +168,7 @@ import TickCircleOutlined from "./TickCircleOutlined.js";
 import TickLargeOutlined from "./TickLargeOutlined.js";
 import TickSmallOutlined from "./TickSmallOutlined.js";
 import ToiletOutlined from "./ToiletOutlined.js";
+import TwoLinesOutlined from "./TwoLinesOutlined.js";
 import UnitLibraryOutlined from "./UnitLibraryOutlined.js";
 import UnitPlanFilled from "./UnitPlanFilled.js";
 import UnitPlanOutlined from "./UnitPlanOutlined.js";
@@ -227,6 +233,7 @@ export {
   CommentCircleRightOutlined,
   CommentDotsRightOutlined,
   CommentMultipleOutlined,
+  CommentTextOutlined,
   CornersInOutlined,
   CornersOutOutlined,
   CustomChannelOutlined,
@@ -259,6 +266,7 @@ export {
   HeartFilled,
   HeartOutlined,
   HomeOutlined,
+  HourglassOutlined,
   ImageSquareOutlined,
   InformationFilled,
   InformationOutlined,
@@ -270,11 +278,13 @@ export {
   LeftArrowOutlined,
   LinkOutlined,
   ListBulletsOutlined,
+  ListNumberedOutlined,
   LockOutlined,
   LogoutOutlined,
   LoudspeakerFilled,
   LoudspeakerOutlined,
   ManageMembersOutlined,
+  MentionOutlined,
   MicrophoneOutlined,
   MinimizeOutlined,
   MinusCircleOutlined,
@@ -328,6 +338,7 @@ export {
   SquareFilled,
   StaffMemberOutlined,
   StarFilled,
+  StarsThreeFilled,
   StudentAddOutlined,
   StudentOutlined,
   SwitchArrowOutlined,
@@ -345,6 +356,7 @@ export {
   TickLargeOutlined,
   TickSmallOutlined,
   ToiletOutlined,
+  TwoLinesOutlined,
   UnitLibraryOutlined,
   UnitPlanFilled,
   UnitPlanOutlined,
