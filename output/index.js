@@ -52,6 +52,7 @@ import CustomChannelOutlined from "./CustomChannelOutlined.js";
 import DeleteOutlined from "./DeleteOutlined.js";
 import DeviceDesktopOutlined from "./DeviceDesktopOutlined.js";
 import DotsNineOutlined from "./DotsNineOutlined.js";
+import DotsSixVerticalOutlined from "./DotsSixVerticalOutlined.js";
 import DownArrowOutlined from "./DownArrowOutlined.js";
 import DownloadOutlined from "./DownloadOutlined.js";
 import EnvelopeDotOutlined from "./EnvelopeDotOutlined.js";
@@ -67,6 +68,7 @@ import FilterThreeLinesFilled from "./FilterThreeLinesFilled.js";
 import FilterThreeLinesOutlined from "./FilterThreeLinesOutlined.js";
 import FolderFilled from "./FolderFilled.js";
 import FolderOutlined from "./FolderOutlined.js";
+import FourLinesOutlined from "./FourLinesOutlined.js";
 import GlobeOutlined from "./GlobeOutlined.js";
 import GoalsOutlined from "./GoalsOutlined.js";
 import GoogleColored from "./GoogleColored.js";
@@ -240,6 +242,7 @@ export {
   DeleteOutlined,
   DeviceDesktopOutlined,
   DotsNineOutlined,
+  DotsSixVerticalOutlined,
   DownArrowOutlined,
   DownloadOutlined,
   EnvelopeDotOutlined,
@@ -255,6 +258,7 @@ export {
   FilterThreeLinesOutlined,
   FolderFilled,
   FolderOutlined,
+  FourLinesOutlined,
   GlobeOutlined,
   GoalsOutlined,
   GoogleColored,
