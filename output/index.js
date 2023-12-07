@@ -1,3 +1,4 @@
+import AIOutlined from "./AIOutlined.js";
 import AIOutnlined from "./AIOutnlined.js";
 import AddCircleFilled from "./AddCircleFilled.js";
 import AddCircleOutlined from "./AddCircleOutlined.js";
@@ -189,6 +190,7 @@ import ZipFileOutlined from "./ZipFileOutlined.js";
 import ZzzOutlined from "./ZzzOutlined.js";
 
 export {
+  AIOutlined,
   AIOutnlined,
   AddCircleFilled,
   AddCircleOutlined,
