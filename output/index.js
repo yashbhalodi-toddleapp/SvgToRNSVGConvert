@@ -98,6 +98,7 @@ import LockOutlined from "./LockOutlined.js";
 import LogoutOutlined from "./LogoutOutlined.js";
 import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
+import MagicWandOutlined from "./MagicWandOutlined.js";
 import ManageMembersOutlined from "./ManageMembersOutlined.js";
 import MentionOutlined from "./MentionOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
@@ -289,6 +290,7 @@ export {
   LogoutOutlined,
   LoudspeakerFilled,
   LoudspeakerOutlined,
+  MagicWandOutlined,
   ManageMembersOutlined,
   MentionOutlined,
   MicrophoneOutlined,
