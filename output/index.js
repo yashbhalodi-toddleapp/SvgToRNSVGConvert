@@ -89,6 +89,7 @@ import ItalicsOutlined from "./ItalicsOutlined.js";
 import JournalFilled from "./JournalFilled.js";
 import JournalOutlined from "./JournalOutlined.js";
 import LEOutlined from "./LEOutlined.js";
+import LanguageOutlined from "./LanguageOutlined.js";
 import LeftArrowCircleOutlined from "./LeftArrowCircleOutlined.js";
 import LeftArrowOutlined from "./LeftArrowOutlined.js";
 import LinkOutlined from "./LinkOutlined.js";
@@ -142,6 +143,7 @@ import ScopeAndSequenceOutlined from "./ScopeAndSequenceOutlined.js";
 import ScoreBasedAssessment from "./ScoreBasedAssessment.js";
 import SearchOutlined from "./SearchOutlined.js";
 import SettingsOutlined from "./SettingsOutlined.js";
+import SetupRightOutlined from "./SetupRightOutlined.js";
 import ShapesOutlined from "./ShapesOutlined.js";
 import ShareCurveLeftOutlined from "./ShareCurveLeftOutlined.js";
 import ShareCurveRightOutlined from "./ShareCurveRightOutlined.js";
@@ -281,6 +283,7 @@ export {
   JournalFilled,
   JournalOutlined,
   LEOutlined,
+  LanguageOutlined,
   LeftArrowCircleOutlined,
   LeftArrowOutlined,
   LinkOutlined,
@@ -334,6 +337,7 @@ export {
   ScoreBasedAssessment,
   SearchOutlined,
   SettingsOutlined,
+  SetupRightOutlined,
   ShapesOutlined,
   ShareCurveLeftOutlined,
   ShareCurveRightOutlined,
