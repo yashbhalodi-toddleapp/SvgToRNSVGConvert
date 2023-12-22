@@ -31,6 +31,7 @@ import ChatDiscussionOutlined from "./ChatDiscussionOutlined.js";
 import ChatDotsLeftOutlined from "./ChatDotsLeftOutlined.js";
 import ChatDotsOutlined from "./ChatDotsOutlined.js";
 import ChatQuoteOutlined from "./ChatQuoteOutlined.js";
+import ChatTextFilled from "./ChatTextFilled.js";
 import ChatTextLeftOutlined from "./ChatTextLeftOutlined.js";
 import ChatTextOutlined from "./ChatTextOutlined.js";
 import ChevronDownOutlined from "./ChevronDownOutlined.js";
@@ -42,6 +43,7 @@ import ClipboardPencilLinesOutlined from "./ClipboardPencilLinesOutlined.js";
 import ClockAlarmOutlined from "./ClockAlarmOutlined.js";
 import ClockFilled from "./ClockFilled.js";
 import ClockOutlined from "./ClockOutlined.js";
+import ClockRecentOutlined from "./ClockRecentOutlined.js";
 import CloseOutlined from "./CloseOutlined.js";
 import CommentCircleRightOutlined from "./CommentCircleRightOutlined.js";
 import CommentDotsRightOutlined from "./CommentDotsRightOutlined.js";
@@ -225,6 +227,7 @@ export {
   ChatDotsLeftOutlined,
   ChatDotsOutlined,
   ChatQuoteOutlined,
+  ChatTextFilled,
   ChatTextLeftOutlined,
   ChatTextOutlined,
   ChevronDownOutlined,
@@ -236,6 +239,7 @@ export {
   ClockAlarmOutlined,
   ClockFilled,
   ClockOutlined,
+  ClockRecentOutlined,
   CloseOutlined,
   CommentCircleRightOutlined,
   CommentDotsRightOutlined,
