@@ -102,6 +102,7 @@ import LogoutOutlined from "./LogoutOutlined.js";
 import LoudspeakerFilled from "./LoudspeakerFilled.js";
 import LoudspeakerOutlined from "./LoudspeakerOutlined.js";
 import MagicWandOutlined from "./MagicWandOutlined.js";
+import MailColored from "./MailColored.js";
 import ManageMembersOutlined from "./ManageMembersOutlined.js";
 import MentionOutlined from "./MentionOutlined.js";
 import MicrophoneOutlined from "./MicrophoneOutlined.js";
@@ -298,6 +299,7 @@ export {
   LoudspeakerFilled,
   LoudspeakerOutlined,
   MagicWandOutlined,
+  MailColored,
   ManageMembersOutlined,
   MentionOutlined,
   MicrophoneOutlined,
