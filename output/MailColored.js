@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Svg, { Path, Mask, G } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
 const MailColored = (props) => {
   const { size } = props;
@@ -8,40 +8,31 @@ const MailColored = (props) => {
     <Svg
       width={size}
       height={size}
-      viewBox="0 0 52 52"
+      viewBox="0 0 25 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M3.25 13C3.25 9.41015 6.16015 6.5 9.75 6.5H42.25C45.8399 6.5 48.75 9.41015 48.75 13V39C48.75 42.5899 45.8399 45.5 42.25 45.5H9.75001C6.16016 45.5 3.25 42.5899 3.25 39V13Z"
+        d="M1.87445 3.75L10.5103 11.7216C11.6902 12.8107 13.5087 12.8107 14.6886 11.7216L23.3245 3.75V19.15C23.3245 19.7575 22.832 20.25 22.2245 20.25L2.97445 20.25C2.36694 20.25 1.87445 19.7575 1.87445 19.15V3.75Z"
         fill="#FFAB00"
+        stroke="#FFAB00"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <Mask
-        id="mask0_1294_3785"
-        style={{
-          maskType: "alpha",
-        }}
-        maskUnits="userSpaceOnUse"
-        x={3}
-        y={6}
-        width={46}
-        height={40}
-      >
-        <Path
-          d="M3.25 13C3.25 9.41015 6.16015 6.5 9.75 6.5H42.25C45.8399 6.5 48.75 9.41015 48.75 13V39C48.75 42.5899 45.8399 45.5 42.25 45.5H9.75001C6.16016 45.5 3.25 42.5899 3.25 39V13Z"
-          fill="#FFAB00"
-        />
-      </Mask>
-      <G mask="url(#mask0_1294_3785)">
-        <Path
-          d="M22.5353 26.2147L3.25 45.5H48.75L29.4648 26.2147C27.5512 24.3012 24.4488 24.3012 22.5353 26.2147Z"
-          fill="#FFBB33"
-        />
-        <Path
-          d="M22.5352 25.7852L3.25 6.5H48.7489L29.4648 25.7851C27.5512 27.6987 24.4487 27.6987 22.5352 25.7852Z"
-          fill="#FFDF99"
-        />
-      </G>
+      <Path
+        d="M10.5109 12.2784L1.87497 20.25H23.325L14.6891 12.2784C13.5092 11.1894 11.6907 11.1894 10.5109 12.2784Z"
+        fill="#FFBB33"
+        stroke="#FFBB33"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <Path
+        d="M10.5109 11.7216L1.87497 3.74996H23.325L14.6891 11.7216C13.5092 12.8106 11.6907 12.8106 10.5109 11.7216Z"
+        fill="#FFDF99"
+        stroke="#FFDF99"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </Svg>
   );
 };
