@@ -8,7 +8,9 @@ import ApprovalTickOutlined from "./ApprovalTickOutlined.js";
 import ArchiveOutlined from "./ArchiveOutlined.js";
 import ArrowCircleLeftFilled from "./ArrowCircleLeftFilled.js";
 import ArrowCircleRightFilled from "./ArrowCircleRightFilled.js";
+import ArrowLeftPaneOutlined from "./ArrowLeftPaneOutlined.js";
 import ArrowOutOutlined from "./ArrowOutOutlined.js";
+import ArrowRightPaneOutlined from "./ArrowRightPaneOutlined.js";
 import AssessmentApplicableOutlined from "./AssessmentApplicableOutlined.js";
 import AssessmentOutlined from "./AssessmentOutlined.js";
 import AttendanceFilled from "./AttendanceFilled.js";
@@ -205,7 +207,9 @@ export {
   ArchiveOutlined,
   ArrowCircleLeftFilled,
   ArrowCircleRightFilled,
+  ArrowLeftPaneOutlined,
   ArrowOutOutlined,
+  ArrowRightPaneOutlined,
   AssessmentApplicableOutlined,
   AssessmentOutlined,
   AttendanceFilled,
