@@ -69,6 +69,8 @@ import FamilyAddOutlined from "./FamilyAddOutlined.js";
 import FamilyChannelOutlined from "./FamilyChannelOutlined.js";
 import FamilyOutlined from "./FamilyOutlined.js";
 import FilterOutlined from "./FilterOutlined.js";
+import FilterThreeLinesCircleFilled from "./FilterThreeLinesCircleFilled.js";
+import FilterThreeLinesCircleOutlined from "./FilterThreeLinesCircleOutlined.js";
 import FilterThreeLinesFilled from "./FilterThreeLinesFilled.js";
 import FilterThreeLinesOutlined from "./FilterThreeLinesOutlined.js";
 import FolderFilled from "./FolderFilled.js";
@@ -268,6 +270,8 @@ export {
   FamilyChannelOutlined,
   FamilyOutlined,
   FilterOutlined,
+  FilterThreeLinesCircleFilled,
+  FilterThreeLinesCircleOutlined,
   FilterThreeLinesFilled,
   FilterThreeLinesOutlined,
   FolderFilled,
