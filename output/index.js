@@ -71,7 +71,6 @@ import FamilyOutlined from "./FamilyOutlined.js";
 import FilterOutlined from "./FilterOutlined.js";
 import FilterThreeLinesCircleFilled from "./FilterThreeLinesCircleFilled.js";
 import FilterThreeLinesCircleOutlined from "./FilterThreeLinesCircleOutlined.js";
-import FilterThreeLinesFilled from "./FilterThreeLinesFilled.js";
 import FilterThreeLinesOutlined from "./FilterThreeLinesOutlined.js";
 import FolderFilled from "./FolderFilled.js";
 import FolderOutlined from "./FolderOutlined.js";
@@ -116,6 +115,7 @@ import MoreHorizontalDotsCircleFilled from "./MoreHorizontalDotsCircleFilled.js"
 import MultipleUsersOutlined from "./MultipleUsersOutlined.js";
 import NoteOutlined from "./NoteOutlined.js";
 import NotificationBellFilled from "./NotificationBellFilled.js";
+import OpenBookTextOutlined from "./OpenBookTextOutlined.js";
 import PDFOutlined from "./PDFOutlined.js";
 import PageDottedOutlined from "./PageDottedOutlined.js";
 import PageGridOutlined from "./PageGridOutlined.js";
@@ -272,7 +272,6 @@ export {
   FilterOutlined,
   FilterThreeLinesCircleFilled,
   FilterThreeLinesCircleOutlined,
-  FilterThreeLinesFilled,
   FilterThreeLinesOutlined,
   FolderFilled,
   FolderOutlined,
@@ -317,6 +316,7 @@ export {
   MultipleUsersOutlined,
   NoteOutlined,
   NotificationBellFilled,
+  OpenBookTextOutlined,
   PDFOutlined,
   PageDottedOutlined,
   PageGridOutlined,
