@@ -136,6 +136,7 @@ import PostTwoAddOutlined from "./PostTwoAddOutlined.js";
 import PostTwoOutlined from "./PostTwoOutlined.js";
 import Print from "./Print.js";
 import ProfileAddOutlined from "./ProfileAddOutlined.js";
+import ProfileCircleOutlined from "./ProfileCircleOutlined.js";
 import ProfileOutlined from "./ProfileOutlined.js";
 import QRCodeOutlined from "./QRCodeOutlined.js";
 import QuickTaskOutlined from "./QuickTaskOutlined.js";
@@ -337,6 +338,7 @@ export {
   PostTwoOutlined,
   Print,
   ProfileAddOutlined,
+  ProfileCircleOutlined,
   ProfileOutlined,
   QRCodeOutlined,
   QuickTaskOutlined,
