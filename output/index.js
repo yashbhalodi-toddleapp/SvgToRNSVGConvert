@@ -54,6 +54,8 @@ import CommentTextOutlined from "./CommentTextOutlined.js";
 import CornersInOutlined from "./CornersInOutlined.js";
 import CornersOutOutlined from "./CornersOutOutlined.js";
 import CustomChannelOutlined from "./CustomChannelOutlined.js";
+import DashboardFilled from "./DashboardFilled.js";
+import DashboardOutlined from "./DashboardOutlined.js";
 import DeleteOutlined from "./DeleteOutlined.js";
 import DeviceDesktopOutlined from "./DeviceDesktopOutlined.js";
 import DotsNineOutlined from "./DotsNineOutlined.js";
@@ -256,6 +258,8 @@ export {
   CornersInOutlined,
   CornersOutOutlined,
   CustomChannelOutlined,
+  DashboardFilled,
+  DashboardOutlined,
   DeleteOutlined,
   DeviceDesktopOutlined,
   DotsNineOutlined,
