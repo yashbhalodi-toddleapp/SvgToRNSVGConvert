@@ -53,6 +53,7 @@ import CommentMultipleOutlined from "./CommentMultipleOutlined.js";
 import CommentTextOutlined from "./CommentTextOutlined.js";
 import CornersInOutlined from "./CornersInOutlined.js";
 import CornersOutOutlined from "./CornersOutOutlined.js";
+import CropOutlined from "./CropOutlined.js";
 import CustomChannelOutlined from "./CustomChannelOutlined.js";
 import DashboardFilled from "./DashboardFilled.js";
 import DashboardOutlined from "./DashboardOutlined.js";
@@ -257,6 +258,7 @@ export {
   CommentTextOutlined,
   CornersInOutlined,
   CornersOutOutlined,
+  CropOutlined,
   CustomChannelOutlined,
   DashboardFilled,
   DashboardOutlined,
