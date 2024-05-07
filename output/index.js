@@ -24,8 +24,10 @@ import BoltFilled from "./BoltFilled.js";
 import BroomOutlined from "./BroomOutlined.js";
 import CalendarOutlined from "./CalendarOutlined.js";
 import CameraOutlined from "./CameraOutlined.js";
+import CaretClosedFilled from "./CaretClosedFilled.js";
 import CaretDownFilled from "./CaretDownFilled.js";
 import CaretLeftFilled from "./CaretLeftFilled.js";
+import CaretOpenedFilled from "./CaretOpenedFilled.js";
 import CaretRightFilled from "./CaretRightFilled.js";
 import CaretUpFilled from "./CaretUpFilled.js";
 import ChatDiscussionFilled from "./ChatDiscussionFilled.js";
@@ -229,8 +231,10 @@ export {
   BroomOutlined,
   CalendarOutlined,
   CameraOutlined,
+  CaretClosedFilled,
   CaretDownFilled,
   CaretLeftFilled,
+  CaretOpenedFilled,
   CaretRightFilled,
   CaretUpFilled,
   ChatDiscussionFilled,
