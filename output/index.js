@@ -90,6 +90,7 @@ import HamburgerOutlined from "./HamburgerOutlined.js";
 import HashtagOutlined from "./HashtagOutlined.js";
 import HeartFilled from "./HeartFilled.js";
 import HeartOutlined from "./HeartOutlined.js";
+import HelpOutlined from "./HelpOutlined.js";
 import HomeOutlined from "./HomeOutlined.js";
 import HourglassOutlined from "./HourglassOutlined.js";
 import ImageSquareOutlined from "./ImageSquareOutlined.js";
@@ -297,6 +298,7 @@ export {
   HashtagOutlined,
   HeartFilled,
   HeartOutlined,
+  HelpOutlined,
   HomeOutlined,
   HourglassOutlined,
   ImageSquareOutlined,
